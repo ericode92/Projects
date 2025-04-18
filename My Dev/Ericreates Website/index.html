@@ -8,6 +8,19 @@
     <title>Ericreates | Website Development & Graphic Design</title>
 </head>
 <body>
+    <!-- Splash Page -->
+    <div class="splash-page" id="splash">
+        <div class="title">
+            <img src="images/logo/main logo.png" alt="ericreates intro">
+        </div>
+        <div class="subtitle">Web Development & Graphic Design</div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <h1>Ericreates creates what you need.</h1>
+    </div>
+
+    <!-- Main -->
     <nav>
         <a href="index.html"><img src="images/logo/main logo.png" alt="ericreates"></a>
         <div class="nav-lists">
@@ -30,8 +43,28 @@
     </nav>
     
 
+<!-- Splash Page Programming -->
+<script>
+    document.addEventListener('readystatechange', () => {
+        if (document.readyState === "complete") {
+            const splash = document.getElementById('splash');
+            const main = document.getElementById('mainContent');
 
+            // Splash page 1.5 sec
+            setTimeout(() => {
+                splash.classList.add('fade-out');
 
+                //Hide splash after animation
+                splash.addEventListener('animationend', () => {
+                    splash.style.display = 'none';
+                    main.classList.add('show-content');
+                });
+            }, 1500);
+        };
+    });
+</script>
+
+<!-- Index page JS -->
 <script src="index.js"></script>
 
 </body>
