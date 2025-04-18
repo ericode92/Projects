@@ -13,6 +13,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Mobile Menu Toggle
+var navList = document.getElementById("navList");
+
+function showMenu() {
+  navList.style.right = "0";
+}
+
+function hideMenu() {
+  navList.style.right = "-300px";
+}
 
 // Search Function
 const data = ["Apple", "Banana", "Cherry", "Durian", "Orange", "Grape", "Watermelon"];
@@ -60,3 +70,4 @@ function goToSearch(query) {
   if (!query.trim()) return;
   window.location.href = `/search.html?query=${encodeURIComponent(query)}`;
 }
+

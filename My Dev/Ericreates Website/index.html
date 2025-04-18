@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
     <title>Ericreates | Website Development & Graphic Design</title>
 </head>
 <body>
-    <!-- Splash Page -->
+    <!-- Splash Page 
     <div class="splash-page" id="splash">
         <div class="title">
             <img src="images/logo/main logo.png" alt="ericreates intro">
@@ -18,30 +20,72 @@
 
     <div class="main-content" id="mainContent">
         <h1>Ericreates creates what you need.</h1>
-    </div>
+    </div>-->
 
-    <!-- Main -->
+    <!-- Header -->
     <nav>
         <a href="index.html"><img src="images/logo/main logo.png" alt="ericreates"></a>
-        <div class="nav-lists">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="portfolios.html">PORTFOLIOS</a></li>
-                <li><a href="about_me.html">ABOUT ME</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
+
+        <div class="nav-lists" id="navList">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="portfolios.html">PORTFOLIOS</a></li>
+                    <li><a href="about_me.html">ABOUT ME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
         </div>
+
         <div class="header-search">
             <div class="search-box">
-                <input type="text" id="search-input" placeholder="Type a portofolio" autocomplete="off">
+                <input type="text" id="search-input" placeholder="Search portofolios" autocomplete="off">
                 <button id="search-button">
                     <i class="fas fa-search"></i>
                 </button>
                 <ul id="autocomplete-list" class="hidden"></ul>
             </div>
         </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
     </nav>
     
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-head">
+            <img src="" alt="ericreates logo">
+            <div class="social-media">
+                <a href="mailto:ericreates92@gmail.com">
+                    <i class="fa-solid fa-envelope" target="_blank"></i>
+                </a>
+                <a href="https://www.instagram.com/ericreates_/" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://github.com/ericode92" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="info">
+                <ul>
+                    <li class="skill" id="markup-skills">HTML/CSS</li>
+                    <li class="skill">JavaScript</li>
+                    <li class="skill">WordPress</li>
+                    <li class="skill">Python</li>
+                    <li class="skill">Git</li>
+                    <li class="skill">Figma</li>
+                    <li class="skill">Adobe Photoshop</li>
+                    <li class="skill">Adobe Illustrator</li>
+                </ul>
+                <span class="email-address">ericreates92@gmail.com</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        ⓒ ERICREATES. ALL RIGHTS RESERVED.
+    </div>
+    
+
 
 <!-- Splash Page Programming -->
 <script>
