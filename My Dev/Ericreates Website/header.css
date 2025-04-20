@@ -69,6 +69,17 @@ nav img {
 }
 
 @media (max-width: 768px) {
+    nav {
+        height: 50px;
+    }
+
+    nav img {
+        width: 100px;
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+
     .nav-lists ul li {
         display: block;
         padding: 0;
