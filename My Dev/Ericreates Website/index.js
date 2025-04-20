@@ -71,3 +71,22 @@ function goToSearch(query) {
   window.location.href = `/search.html?query=${encodeURIComponent(query)}`;
 }
 
+//Scroll down Shrink effect
+// shrink only when desktop
+function handleNavShrink() {
+  const nav = document.getElementById("mainNav");
+
+  if (window.innerWidth <= 768) {
+    nav.classList.remove("shrink");
+    return;
+  }
+
+  if (window.scrollY > 50) {
+    nav.classList.add("shrink");
+  } else {
+    nav.classList.remove("shrink");
+  }
+}
+
+window.addEventListener("scroll", handleNavShrink);
+window.addEventListener("resize", handleNavShrink); // 모바일 전환 시에도 적용

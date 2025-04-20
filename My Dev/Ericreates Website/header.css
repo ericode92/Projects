@@ -14,6 +14,37 @@ nav img {
     display: none;
 }
 
+/* Standard Nav*/
+nav.shrinkable {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* Shrinked Nav*/
+nav.shrinkable.shrink {
+    padding: 10px 400px;
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav.shrinkable.shrink img {
+    width: 100px;
+    transition: .3s ease;
+}
+
+nav.shrinkable.shrink .nav-lists ul li a {
+    font-size: 13px;
+}
+
+nav.shrinkable.shrink .header-search .search-box {
+    transform: scale(0.9);
+    position: relative;
+}
+
 /* Category */
 .nav-lists ul li {
     list-style: none;
@@ -71,6 +102,7 @@ nav img {
 @media (max-width: 768px) {
     nav {
         height: 50px;
+        padding: 10px 20px;
     }
 
     nav img {
@@ -102,16 +134,8 @@ nav img {
         transition: .4s;
     }
 
-    nav .fa-solid {
-        display: block;
-        color: #212322;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-
     .nav-lists ul {
-        padding: 0;
+        padding-left: 20px;
         margin-top: 60px;
         display: flex;
         flex-direction: column;
@@ -123,25 +147,52 @@ nav img {
     }
 
     .fa-bars {
+        display: block !important;
         position: absolute;
         right: 20px;
-        top: 5px;
+        top: 10px;
+        font-size: 24px;
+        color: #212322;
     }
 
     .fa-xmark {
+        display: block !important;
+        position: absolute;
+        top: 10px;
+        right: 20px;
         color: white !important;
+        font-size: 22px;
     }
 
     .header-search {
-        display: none;
+        opacity: 0;
+        pointer-events: none;
     }
 
+    nav.shrinkable.shrink {
+        padding: 10px 20px;
+        box-shadow: none;
+    }
+
+    nav.shrinkable.shrink img {
+        width: 100px;
+    }
+
+    nav.shrinkable.shrink .nav-lists ul li a {
+        font-size: 14px;
+    }
+
+    nav.shrinkable.shrink .header-search .search-box {
+        transform: none;
+    }
 }
 
 /* Search box */
 .header-search {
     position: relative;
     width: 200px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .search-box {
@@ -149,13 +200,15 @@ nav img {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+    margin-left: auto;
     display: flex;
     align-items: center;
     width: 200px;
     border: 1px solid #ccc;
     border-radius: 999px;
     padding: 4px 8px;
-    transition: all 0.3s ease;
+    transition: width 0.3s ease;
+    transform-origin: right;
     background-color: white;
     z-index: 5;
 }
