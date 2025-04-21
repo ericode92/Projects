@@ -467,9 +467,9 @@ main {
 
 .arrows {
     position: absolute;
-    bottom: 10px;
-    width: 1140px;
-    max-width: 90%;
+    bottom: 50%;
+    width: 1200px;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     left: 50%;
@@ -482,17 +482,21 @@ main {
     height: 40px;
     border-radius: 50%;
     border: 1px solid #eee;
-    font-size: large;
-    bottom: 20%;
-    left: 10%;
+    font-size: 20px;
     color: #aaa;
     background-color: white;
+    opacity: .5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
 }
 
 #prev:hover,
 #next:hover  {
     border: 1px solid #aaa;
     color: #212322;
+    opacity: 1;
     transition: 0.4s;
     box-shadow: 0 0 2px #aaa;
 }
@@ -699,6 +703,7 @@ main {
         position: absolute;
         bottom: 70%;
         opacity: .8;
+        max-width: 95%;
     }
 
     #back {
