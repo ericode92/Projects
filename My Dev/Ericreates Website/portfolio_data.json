@@ -1,0 +1,23 @@
+[
+    {
+        "title": "First Project Example",
+        "description": "A short description of the first project.",
+        "image": "images/portfolio1.jpg",
+        "category": "Web Design",
+        "url": "portfolios/first_project.html"
+    },
+    {
+        "title": "Second Project Example",
+        "description": "Description for the second sample project.",
+        "image": "images/portfolio2.jpg",
+        "category": "Graphic Design",
+        "url": "portfolios/second_project.html"
+    },
+    {
+        "title": "Third Project Example",
+        "description": "An overview of the third example project.",
+        "image": "images/portfolio3.jpg",
+        "category": "Development",
+        "url": "portfolios/third_project.html"
+    }
+]
