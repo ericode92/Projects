@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="detail.css">
   <title>Ericreates Portfolio Search Result</title>
   <link rel="icon" type="image/png" href="images/Logo/favicon.png" />
 </head>
@@ -40,7 +41,7 @@
 
   <!-- Search Result -->
   <h1>Search result</h1>
-  <div class="search-results" id="search-results"></div>
+  <div id="detail-container"></div>
   
   <!-- Footer -->
   <div class="footer">
@@ -82,104 +83,56 @@
       ⓒ ERICREATES. ALL RIGHTS RESERVED.
   </div>
 
+<script src="detail.js"></script>
 <script src="search.js"></script>
 <script>
     async function fetchSearchData() {
-      const response = await fetch('data/searchData.json');
-      return response.json();
-    }
-  
-    function getQueryParam(param) {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(param);
-    }
-  
-    function searchInData(data, keyword) {
-      keyword = keyword.toLowerCase();
-      return data.filter(item =>
-        item.title.toLowerCase().includes(keyword) ||
-        item.description.toLowerCase().includes(keyword) ||
-        item.category.toLowerCase().includes(keyword) ||
-        (item.tags && item.tags.some(tag => tag.toLowerCase().includes(keyword)))
-      );
-    }
-  
-    function renderResults(results) {
-      const container = document.getElementById('search-results');
-      if (results.length === 0) {
-        container.innerHTML = '<p>No Result.</p>';
-        return;
-      }
-  
-      container.innerHTML = results.map(item => `
-        <div class="result-card">
-          <a href="detail.html?id=${item.id}">
-            <img src="${item.thumbnail}" alt="${item.title}">
-            <div class="info">
-              <h3>${item.title}</h3>
-              <p>${item.description}</p>
-              <div class="tags">
-                ${(item.tags || []).map(tag => `<span class="tag">${tag}</span>`).join('')}
-              </div>
-            </div>
-          </a>
+  const response = await fetch('data/searchData.json');
+  return response.json();
+}
+
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+function searchInData(data, keyword) {
+  keyword = keyword.toLowerCase();
+  return data.filter(item =>
+    item.title.toLowerCase().includes(keyword) ||
+    item.description.toLowerCase().includes(keyword) ||
+    item.category.toLowerCase().includes(keyword) ||
+    (item.tags && item.tags.some(tag => tag.toLowerCase().includes(keyword)))
+  );
+}
+
+function renderResults(results) {
+  const container = document.getElementById('search-results');
+  if (results.length === 0) {
+    container.innerHTML = '<p>No Result.</p>';
+    return;
+  }
+
+  container.innerHTML = results.map(item => `
+    <div class="result-card">
+      <a href="detail.html?id=${item.id}">
+        <img src="${item.thumbnail}" alt="${item.title}">
+        <div class="info">
+          <h3>${item.title}</h3>
+          <p>${item.description}</p>
         </div>
-      `).join('');
-    }
-  
-    async function setupAutocomplete(data) {
-      const input = document.getElementById('search-input');
-      const list = document.getElementById('autocomplete-list');
-  
-      input.addEventListener('input', () => {
-        const value = input.value.toLowerCase();
-        list.innerHTML = '';
-  
-        if (!value) {
-          list.classList.add('hidden');
-          return;
-        }
-  
-        const suggestions = data.filter(item =>
-          item.title.toLowerCase().includes(value)
-          || (item.tags && item.tags.some(tag => tag.toLowerCase().includes(value)))
-        ).slice(0, 5);
-  
-        suggestions.forEach(item => {
-          const li = document.createElement('li');
-          li.textContent = item.title;
-          li.addEventListener('click', () => {
-            input.value = item.title;
-            document.getElementById('search-form').submit();
-          });
-          list.appendChild(li);
-        });
-  
-        list.classList.remove('hidden');
-      });
-  
-      document.addEventListener('click', (e) => {
-        if (!list.contains(e.target) && e.target !== input) {
-          list.classList.add('hidden');
-        }
-      });
-    }
-  
-    (async () => {
-    let keyword = getQueryParam('query');
-    
-    // fallback to input box (if any)
-    if (!keyword) {
-        const input = document.getElementById('search-input');
-        keyword = input?.value || '';
-    }
+      </a>
+    </div>
+  `).join('');
+}
 
-    const data = await fetchSearchData();
-    const results = searchInData(data, keyword);
-    renderResults(results, keyword);
-    })();
-
-  </script>
+(async () => {
+  const keyword = getQueryParam('query');
+  const data = await fetchSearchData();
+  const results = searchInData(data, keyword);
+  renderResults(results);
+})();
+    </script>
     
 </body>
 </html>

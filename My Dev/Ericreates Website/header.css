@@ -243,7 +243,7 @@ nav.shrinkable.shrink .header-search .search-box {
 /* Extend search box */
 #search-input:focus + #search-button,
 #search-input:focus {
-    color: #009ade;
+    color: #212322;
 }
 
 .search-box:focus-within {

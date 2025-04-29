@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "포트폴리오 웹사이트 제작",
+    "description": "개인 포트폴리오 웹사이트 제작 사례입니다.",
+    "category": "웹 개발",
+    "tags": ["HTML", "CSS", "JavaScript", "Python", "Node.js"],
+    "thumbnail": "images/Project/Website/Kimchips.jpg",
+    "url": "https://kimchips.co.kr/"
+  },
+  {
+    "id": 2,
+    "title": "반응형 웹디자인",
+    "description": "모바일과 데스크탑을 지원하는 웹디자인.",
+    "category": "디자인",
+    "tags": ["Responsive", "CSS", "UI/UX"],
+    "thumbnail": "images/portfolio2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "반응형 웹디자인",
+    "description": "모바일과 데스크탑을 지원하는 웹디자인.",
+    "category": "디자인",
+    "tags": ["Responsive", "CSS", "UI/UX"],
+    "thumbnail": "images/portfolio2.jpg"
+  }
+]
