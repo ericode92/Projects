@@ -1,5 +1,5 @@
 async function fetchData() {
-  const response = await fetch('/data/searchData.json');
+  const response = await fetch('/My Dev/Ericreates Website/data/searchData.json');
   return response.json();
 }
 

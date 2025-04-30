@@ -19,7 +19,7 @@ searchInput.addEventListener('input', function () {
 function handleSearch() {
   const keyword = searchInput.value.trim();
   if (keyword) {
-    window.location.href = `/search/search.html?query=${encodeURIComponent(keyword)}`;
+    window.location.href = `/My Dev/Ericreates Website/search/search.html?query=${encodeURIComponent(keyword)}`;
   }
 }
 
@@ -72,7 +72,7 @@ searchInput.addEventListener('blur', function () {
 // AutoComplete
 let jsonData = [];
 
-fetch('data.json')
+fetch('/My Dev/Ericreates Website/data/searchData.json')
   .then(res => res.json())
   .then(data => {
     jsonData = data;
@@ -106,7 +106,7 @@ searchInput.addEventListener("input", () => {
 
 function performSearch(keyword) {
   localStorage.setItem("searchQuery", keyword);
-  window.location.href = "/search/search.html";
+  window.location.href = "/My Dev/Ericreates Website/search/search.html";
 }
 
 document.getElementById("search-button").addEventListener("click", () => {
