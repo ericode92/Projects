@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/common/header.css">
+    <link rel="stylesheet" href="/common/footer.css">
+    <title>Ericreates | Website Development & Graphic Design</title>
+    <link rel="icon" type="image/png" href="/images/Logo/favicon.png" />
+</head>
+<body>
+    <!-- Splash Page -->
+    <div class="splash-page" id="splash">
+        <div class="title">
+            <img src="/images/logo/main logo.png" alt="ericreates intro">
+        </div>
+        <div class="subtitle">Web Development & Graphic Design</div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <h1>Ericreates creates what you need.</h1>
+    </div>
+
+    <!-- Header -->
+    <nav id="mainNav" class="shrinkable">
+        <a href="index.html"><img src="/images/Logo/main logo.png" alt="ericreates"></a>
+
+        <div class="nav-lists" id="navList">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="/portfolios/portfolios.html">PORTFOLIOS</a></li>
+                    <li><a href="/about me/about_me.html">ABOUT ME</a></li>
+                    <li><a href="/contact/contact.html">CONTACT</a></li>
+                </ul>
+        </div>
+
+        <div class="header-search">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search portofolios" autocomplete="off">
+                <button id="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+                <ul id="autocomplete-list" class="hidden"></ul>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="wrapper">
+
+        <!-- Main -->
+        <section class="home-main-section">
+            <div class="carousel">
+                <div class="list">
+                    <div class="item">
+                        <!-- Graphic Design -->
+                        <img src="/images/Website_Main/Grahpics.png" alt="graphic design">
+                        <div class="introduce">
+                            <div class="title">Design</div>
+                            <div class="topic">Graphic Design</div>
+                            <div class="des">
+                                Design Graphics such as promotion, advertisement, information and etc. to deliver message visually.
+                            </div>
+                            <button class="seeMore">See More →</button>
+                        </div>
+                        <div class="detail">
+                            <div class="title">Graphic Design</div>
+                            <div class="des">
+                                Visualize various data, pop-up and carousel images for 
+                                displaying on web and mobile.<br><br>
+                                Graphic design will deliver the correct information and also look aesthetically.<br><br>
+                                It's a very important material for your business and also will be first impresstion of your company or brand.
+                            </div>
+                            <div class="specifications">
+                                <div>
+                                    <p>Basic Style</p>
+                                    <p>1 Day</p>
+                                </div>
+                                <div>
+                                    <p>Theme Style</p>
+                                    <p>2 Days</p>
+                                </div>
+                            </div>
+                            <div class="checkout">
+                                <a href="#">
+                                <button>View Portfolios</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Dev -->
+                    <div class="item">
+                        <img src="/images/Website_Main/Website.png" alt="web development">
+                        <div class="introduce">
+                            <div class="title">Design & Development</div>
+                            <div class="topic">Web Development & UX/UI Design</div>
+                            <div class="des">
+                                Develop website or ecommerce for your business.
+                            </div>
+                            <button class="seeMore">See More →</button>
+                        </div>
+                        <div class="detail">
+                            <div class="title">Web Development & UX/UI Design</div>
+                            <div class="des">
+                                Develop responsive website for PC and mobile.<br>Furthermore, design UX/UI mobile App, develop landing page, dashboard and etc.<br><br>
+                                Develop visually better website or ecommerce with over 10 years graphic design work experience and perspective.<br>Knowledge and understand of both design and development will bring better and the best result.
+                            </div>
+                            <div class="specifications">
+                                <div>
+                                    <p>Company<br>&Hospital<br>&Academy Website</p>
+                                    <p>7 Days</p>
+                                </div>
+                                <div>
+                                    <p>Ecommerce<br>(Basic)</p>
+                                    <p>21 Days</p>
+                                </div>
+                                <div>
+                                    <p>WordPress<br>(+Development)</p>
+                                    <p>14 Days</p>
+                                </div>
+                                <div>
+                                    <p>Woocommerce<br>(+Development)</p>
+                                    <p>30 Days</p>
+                                </div>
+                                <div>
+                                    <p>Shopify<br>(Basic)</p>
+                                    <p>21 Days</p>
+                                </div>
+                            </div>
+                            <div class="checkout">
+                                <a href="#">
+                                <button>View Portfolio</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Logo Design -->
+                    <div class="item">
+                        <img src="/images/Website_Main/Logo.png" alt="logo design">
+                        <div class="introduce">
+                            <div class="title">Design</div>
+                            <div class="topic">Logo Design</div>
+                            <div class="des">
+                                Logo is the first impression to your customers.
+                            </div>
+                            <button class="seeMore">See More →</button>
+                        </div>
+                        <div class="detail">
+                            <div class="title">Logo Design</div>
+                            <div class="des">
+                                Simplify and visualize your story, needs and purpose.<br><br>
+                                Indispensable part to run a business to simbolize<br>your product or company identity.<br>Logo will be your first imporession to your customers.
+                            </div>
+                            <div class="specifications">
+                                <div>
+                                    <p>Text Type</p>
+                                    <p>5 Days</p>
+                                </div>
+                                <div>
+                                    <p>Illustration</p>
+                                    <p>7 Days</p>
+                                </div>
+                                <div>
+                                    <p>Complex Type</p>
+                                    <p>7 Days</p>
+                                </div>
+                            </div>
+                            <div class="checkout">
+                                <a href="#">
+                                <button>View Portfolio</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Package Design -->
+                    <div class="item">
+                        <img src="/images/Website_Main/Package.png" alt="package design">
+                        <div class="introduce">
+                            <div class="title">Design</div>
+                            <div class="topic">Package Design</div>
+                            <div class="des">
+                                It's very useful not only when you sell item but also give away promotion. Product package will inform the value of your business.
+                            </div>
+                            <button class="seeMore">See More →</button>
+                        </div>
+                        <div class="detail">
+                            <div class="title">Package Design</div>
+                            <div class="des">
+                                It must be considered both aesthetic impression and practicality.<br>It must fit on the product concept but also has to be unique.<br><br>
+                                It must be thoroughly designed by the concept of item, target and main consumers. They'll notice your identity in a glance.
+                            </div>
+                            <div class="specifications">
+                                <div>
+                                    <p>Pouch<br>(2~3 sides)</p>
+                                    <p>7 Days</p>
+                                </div>
+                                <div>
+                                    <p>Box<br>(6 sides)</p>
+                                    <p>7 Days</p>
+                                </div>
+                                <div>
+                                    <p>Complicated<br>(Layered)</p>
+                                    <p>10 Days</p>
+                                </div>
+                            </div>
+                            <div class="checkout">
+                                <a href="#">
+                                <button>View Portfolio</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Information Page Design -->
+                    <div class="item">
+                        <img src="/images/Website_Main/Information Page.png" alt="information design">
+                        <div class="introduce">
+                            <div class="title">Design</div>
+                            <div class="topic">Information Page</div>
+                            <div class="des">
+                                It is important that making decision of consumers.<br>
+                                Noticeable and readable information page will affect your sales increase.
+                            </div>
+                            <button class="seeMore">See More →</button>
+                        </div>
+                        <div class="detail">
+                            <div class="title">Information Page</div>
+                            <div class="des">
+                                If you have your product information page, it will be helpful to sell your items on ecommerce market such as Amazon, Ebay and etc.<br><br>
+                                Consumers want to check the feature of product before purchase. Furthermore, you can appeal your fascinating items to your new customers and can be use as your proposal.
+                            </div>
+                            <div class="specifications">
+                                <div>
+                                    <p>Basic<br>(Length 10,000px)</p>
+                                    <p>2 Days</p>
+                                </div>
+                                <div>
+                                    <p>Delux<br>(Length 15,000px)</p>
+                                    <p>4 Days</p>
+                                </div>
+                                <div>
+                                    <p>Premium<br>(Length 20,000px)</p>
+                                    <p>7 Days</p>
+                                </div>
+                            </div>
+                            <div class="checkout">
+                                <a href="#">
+                                <button>View Portfolio</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Print Out Design -->
+                    <div class="item">
+                        <img src="/images/Website_Main/Print Out.png" alt="print out design">
+                        <div class="introduce">
+                            <div class="title">Design</div>
+                            <div class="topic">Print Out</div>
+                            <div class="des">
+                                Business card, box, leaflet, catalog, banner, product tag, polybag, advertisement of news or magazines, poster, sticker and etc.
+                            </div>
+                            <button class="seeMore">See More →</button>
+                        </div>
+                        <div class="detail">
+                            <div class="title">Print Out</div>
+                            <div class="des">
+                                It's using in many ways and also important<br>to sell or advertise your brand and product.<br><br>
+                                It's a compacted key-point information what you want to tell.<br> Commonly using but also major method to advertising your brand.
+                            </div>
+                            <div class="specifications">
+                                <div>
+                                    <p>Leaflet<br><br></p>
+                                    <p>1 Day</p>
+                                </div>
+                                <div>
+                                    <p>Poster<br><br></p>
+                                    <p>3 Days</p>
+                                </div>
+                                <div>
+                                    <p>Catalog<br>(4P)</p>
+                                    <p>4 Days</p>
+                                </div>
+                                <div>
+                                    <p>Catalog<br>(6P)</p>
+                                    <p>7 Days</p>
+                                </div>
+                                <div>
+                                    <p>Booklet<br>(8P▲)</p>
+                                    <p>10 Days</p>
+                                </div>
+                            </div>
+                            <div class="checkout">
+                                <a href="#">
+                                <button>View Portfolio</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <button id="prev">〈</button>
+                    <button id="next">〉</button>
+                </div>
+                <button id="back">See All</button>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-head">
+            <img src="/images/Logo/favicon.png" alt="ericreates logo">
+                <div class="footer-text">ERICREATES<br>Develop Your Website<br>Design Your Needs</div>
+            <div class="social-media">
+                <a href="mailto:ericreates92@gmail.com">
+                    <i class="fa-solid fa-envelope" target="_blank"></i>
+                </a>
+                <a href="https://www.instagram.com/ericreates_/" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://github.com/ericode92" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="info">
+                <span class="skill-text">SKILLS</span>
+                    <ul>
+                        <li class="skill"><img src="/images/Footer_skills/HTML5_logo.png" alt="html"></li>
+                        <li class="skill"><img src="/images/Footer_skills/CSS3_logo.png" alt="css"></li>
+                        <li class="skill"><img src="/images/Footer_skills/JavaScript_logo.png" alt="javascript"></li>
+                        <li class="skill"><img src="/images/Footer_skills/WordPress_blue_logo.svg.png" alt="wordpress"></li>
+                        <li class="skill"><img src="/images/Footer_skills/Shopify_logo.svg.png" alt="shopify"></li>
+                        <li class="skill"><img src="/images/Footer_skills/Python-logo.png" alt="python"></li>
+                        <li class="skill"><img src="/images/Footer_skills/figma.png" alt="figma"></li>
+                        <li class="skill"><img src="/images/Footer_skills/photoshop.png" alt="photoshop"></li>
+                        <li class="skill"><img src="/images/Footer_skills/illustrator.png" alt="illustrator"></li>
+                    </ul>
+                <span class="email-address">ericreates92@gmail.com</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        ⓒ ERICREATES. ALL RIGHTS RESERVED.
+    </div>
+    
+
+
+<!-- Splash Page Programming -->
+<script>
+    document.addEventListener('readystatechange', () => {
+        if (document.readyState === "complete") {
+            const splash = document.getElementById('splash');
+            const main = document.getElementById('mainContent');
+
+            // Splash page 1.5 sec
+            setTimeout(() => {
+                splash.classList.add('fade-out');
+
+                //Hide splash after animation
+                splash.addEventListener('animationend', () => {
+                    splash.style.display = 'none';
+                    main.classList.add('show-content');
+                });
+            }, 1500);
+        };
+    });
+</script>
+
+<!-- Index page JS -->
+<script src="index.js"></script>
+<script src="/search/search.js"></script>
+<script src="main_carousel.js"></script>
+
+</body>
+</html>
