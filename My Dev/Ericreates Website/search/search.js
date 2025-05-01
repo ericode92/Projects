@@ -117,3 +117,74 @@ searchInput.addEventListener("keydown", e => {
   if (e.key === "Enter") performSearch(searchInput.value);
 });
 
+// Mobile Search Modal Toggle
+// Modal Open & Close
+document.getElementById('open-search-modal').addEventListener('click', () => {
+  document.getElementById('search-popup').classList.remove('hidden');
+});
+
+document.getElementById('close-search-modal').addEventListener('click', () => {
+  document.getElementById('search-popup').classList.add('hidden');
+});
+
+document.getElementById('search-popup').addEventListener('click', (e) => {
+  const popupContent = document.querySelector('#search-popup .popup-content');
+  if (!popupContent.contains(e.target)) {
+    document.getElementById('search-popup').classList.add('hidden');
+  }
+});
+
+// Modal Search
+document.getElementById('popup-search-button').addEventListener('click', function () {
+  const keyword = document.getElementById('popup-search-input').value.trim();
+  if (keyword) {
+    window.location.href = `/My Dev/Ericreates Website/search/search.html?query=${encodeURIComponent(keyword)}`;
+  }
+});
+
+const popupSearchInput = document.getElementById('popup-search-input');
+popupSearchInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    const keyword = popupSearchInput.value.trim();
+    if (keyword) {
+      window.location.href = `/My Dev/Ericreates Website/search/search.html?query=${encodeURIComponent(keyword)}`;
+    }
+  }
+});
+
+// Modal AutoComplete
+document.getElementById('popup-search-input').addEventListener('input', function () {
+  const searchText = this.value.toLowerCase();
+  const list = document.getElementById('popup-autocomplete-list');
+  list.innerHTML = '';
+  if (!searchText) {
+    list.classList.add('hidden');
+    return;
+  }
+
+  fetch('/My Dev/Ericreates Website/data/searchData.json')
+    .then(res => res.json())
+    .then(data => {
+      const matches = data.filter(item =>
+        item.title.toLowerCase().includes(searchText) ||
+        item.tags?.some(tag => tag.toLowerCase().includes(searchText))
+      ).slice(0, 5);
+
+      if (matches.length === 0) {
+        list.classList.add('hidden');
+        return;
+      }
+
+      matches.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item.title;
+        li.addEventListener('click', () => {
+          document.getElementById('popup-search-input').value = item.title;
+          window.location.href = `/My Dev/Ericreates Website/search/search.html?query=${encodeURIComponent(item.title)}`;
+        });
+        list.appendChild(li);
+      });
+
+      list.classList.remove('hidden');
+    });
+});

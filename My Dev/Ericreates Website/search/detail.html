@@ -15,29 +15,44 @@
 <body>
     <!-- Header -->
     <nav id="mainNav" class="shrinkable">
-      <a href="/My Dev/Ericreates Website/main/index.html"><img src="/My Dev/Ericreates Website/images/Logo/main logo.png" alt="ericreates"></a>
+        <a href="/My Dev/Ericreates Website/main/index.html"><img src="/My Dev/Ericreates Website/images/logo/main logo.png" alt="ericreates"></a>
 
-      <div class="nav-lists" id="navList">
-          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-              <ul>
-                <li><a href="/My Dev/Ericreates Website/main/index.html">HOME</a></li>
-                <li><a href="/My Dev/Ericreates Website/portfolios/portfolios.html">PORTFOLIOS</a></li>
-                <li><a href="/My Dev/Ericreates Website/about me/about_me.html">ABOUT ME</a></li>
-                <li><a href="/My Dev/Ericreates Website/contact/contact.html">CONTACT</a></li>
-              </ul>
-      </div>
+        <div class="nav-lists" id="navList">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/My Dev/Ericreates Website/main/index.html">HOME</a></li>
+                    <li><a href="/My Dev/Ericreates Website/portfolios/portfolios.html">PORTFOLIOS</a></li>
+                    <li><a href="/My Dev/Ericreates Website/about me/about_me.html">ABOUT ME</a></li>
+                    <li><a href="/My Dev/Ericreates Website/contact/contact.html">CONTACT</a></li>    
+                </ul>
+        </div>
 
-      <div class="header-search">
-          <div class="search-box">
-              <input type="text" id="search-input" placeholder="Search portofolios" autocomplete="off">
-              <button id="search-button">
-                  <i class="fas fa-search"></i>
-              </button>
-              <ul id="autocomplete-list" class="hidden"></ul>
-          </div>
-      </div>
-      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-  </nav>
+        <!-- Mobile Search Icon -->
+        <button class="mobile-search-icon" id="open-search-modal">
+            <i class="fa fa-search"></i>
+        </button>
+
+        <div class="header-search">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search portofolios" autocomplete="off">
+                <button id="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+                <ul id="autocomplete-list" class="hidden"></ul>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        
+        <!-- Mobile Search Modal -->
+        <div id="search-popup" class="search-popup hidden">
+            <div class="popup-content">
+              <input id="popup-search-input" type="text" placeholder="Search Portfolios...">
+              <button id="popup-search-button">Search</button>
+              <ul id="popup-autocomplete-list" class="hidden"></ul>
+              <button id="close-search-modal" class="close-btn">✕</button>
+            </div>
+        </div>
+    </nav>
 
   <!-- Search Result -->
   <h1>Search result</h1>
@@ -83,6 +98,7 @@
     ⓒ ERICREATES. ALL RIGHTS RESERVED.
 </div>
 
+<script src="/My Dev/Ericreates Website/main/index.js"></script>
 <script src="detail.js"></script>
 <script src="search.js"></script>
 <script>

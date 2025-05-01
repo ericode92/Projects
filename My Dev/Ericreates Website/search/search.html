@@ -26,6 +26,11 @@
               </ul>
       </div>
 
+      <!-- Mobile Search Icon -->
+      <button class="mobile-search-icon" id="open-search-modal">
+        <i class="fa fa-search"></i>
+      </button>
+
       <div class="header-search">
           <div class="search-box">
               <input type="text" id="search-input" placeholder="Search portofolios" autocomplete="off">
@@ -36,6 +41,16 @@
           </div>
       </div>
       <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      
+      <!-- Mobile Search Modal -->
+      <div id="search-popup" class="search-popup hidden">
+          <div class="popup-content">
+            <input id="popup-search-input" type="text" placeholder="Search Portfolios...">
+            <button id="popup-search-button">Search</button>
+            <ul id="popup-autocomplete-list" class="hidden"></ul>
+            <button id="close-search-modal" class="close-btn">✕</button>
+          </div>
+      </div>
   </nav>
 
   <!-- Search Result -->
@@ -82,6 +97,7 @@
     ⓒ ERICREATES. ALL RIGHTS RESERVED.
 </div>
 
+<script src="/My Dev/Ericreates Website/main/index.js"></script>
 <script src="search.js"></script>
 <script>
     async function fetchSearchData() {

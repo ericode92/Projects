@@ -280,3 +280,95 @@ nav.shrinkable.shrink .header-search .search-box {
 #autocomplete-list li:hover {
     background-color: #f0f0f0;
 }
+
+/* Popup Search */
+.mobile-search-icon {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+  
+.search-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+  
+.search-popup.hidden {
+    display: none;
+}
+  
+.popup-content {
+    padding: 20px;
+    border-radius: 6px;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.85);
+    animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#popup-search-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    color: #212322;
+    font-size: 12px;
+}
+
+#popup-search-button {
+    padding: 2px 8px;
+    color: white;
+    background: #009ade;
+    border-radius: 6px;
+    border: none;
+    margin-left: 10px;
+}
+  
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    color: #212322;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#popup-autocomplete-list {
+    list-style: none;
+    margin-top: 10px;
+    color: #212322;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+  
+/* Mobile search only */
+@media (max-width: 768px) {
+.mobile-search-icon {
+    display: block; /* 돋보기 아이콘 표시 */
+    position: absolute;
+    right: 60px;
+  }
+}
