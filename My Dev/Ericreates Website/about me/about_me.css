@@ -32,7 +32,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 70px;
+    gap: 40px;
 }
 
 .about_as {
@@ -49,9 +49,12 @@ body {
 
 .about_as img {
     width: 100%;
+    max-width: 535px;
     height: auto;
+    max-height: 300px;
     margin: 10px 0;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .des {
@@ -409,7 +412,7 @@ body {
     width: 300px;
     flex-shrink: 0;
     height: 300px;
-    background: #f68e2d;
+    background: #009ade;
     box-shadow: 4px 4px 10px 1px rgba(203, 206, 208, 0.5);
     border-radius: 20px;
     transform: translateX(-80px);
@@ -458,6 +461,7 @@ body {
 
   .blog-slider__content {
     padding-right: 0;
+    margin-left: -20px;
  }
 
   @media screen and (max-width: 768px) {
@@ -531,26 +535,26 @@ body {
  }
      
  #uut {
-     background: #ed1b24;
-       color: #fff;
+    border: 1px solid #009ade;
+    color: #212322;
  }
      
  #rt {
-     background: #f37f96;
-       color: #fff;
+    border: 1px solid #009ade;
+    color: #212322;
  }
      
  #aloe {
-     background: #ffd900;
-       color: #000;
+    border: 1px solid #009ade;
+    color: #212322;
  }
      
  .blog-slider__whens {
-     display: flex;
-       gap: 15px;
-       list-style: none;
-       margin-bottom: 5px;
-       padding: 0 !important
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin-bottom: 5px;
+    padding: 0 !important
  }
      
  @media (max-width: 768px) {
@@ -566,7 +570,7 @@ body {
      
   .blog-slider__button {
     display: inline-flex;
-    background: #f68e2d;
+    background: #009ade;
     padding: 8px 20px;
     border-radius: 50px;
     color: #fff !important;
@@ -629,14 +633,14 @@ body {
     height: 11px;
     display: block;
     border-radius: 10px;
-    background: #f68e2d;
+    background: #009ade;
     opacity: 0.2;
     transition: all 0.3s;
  }
 
   .blog-slider__pagination .swiper-pagination-bullet-active {
     opacity: 1;
-    background: #f68e2d;
+    background: #009ade;
     height: 30px;
     box-shadow: 0px 0px 20px rgba(23, 117, 189, 0.2);
  }
@@ -647,3 +651,137 @@ body {
       width: 30px;
    }
  }
+
+/* Project History */
+.history-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  max-width: 1000px;
+  margin: 50px auto;
+  border-radius: 12px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.history-year-group {
+  border-left: 5px solid #009ade;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  background-color: #fff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.year-label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  padding: 16px 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.year-label::after {
+  content: "▾";
+  position: absolute;
+  right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.history-year-group.collapsed .year-label::after {
+  transform: rotate(-90deg);
+}
+
+.project-list {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+  padding: 0 20px;
+  margin: 0;
+  list-style: disc inside;
+}
+
+.project-list li {
+  list-style: none;
+  margin-left: 10px;
+  color: #999;
+  font-size: 14px;
+  line-height: 1.8em;
+}
+
+/*
+.history-year-group.collapsed .project-list {
+  display: none;
+}
+*/
+
+.history-year-group:not(.collapsed) .project-list {
+  max-height: 1000px; /* Set a large scale */
+  opacity: 1;
+  transform: translateY(0);
+  padding-bottom: 16px;
+}
+
+/* Partners */
+.pn-section {
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.pn-title {
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.title-text {
+  padding: 2px 16px;
+  border: 1px solid #aaa;
+  border-radius: 999px;
+}
+
+.pn-slide {
+  width: 100%;
+}
+
+.partners {
+  display: flex;
+  gap: 50px;
+  animation: scrollAnimation 40s linear infinite;
+}
+
+@keyframes scrollAnimation {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-100%);
+  }
+}
+
+.partners img {
+  height: 100px;
+  width: auto;
+  padding: 20px;
+}
+
+.partner {
+  width: 200px;
+  margin: 0 10px;
+}
