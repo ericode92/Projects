@@ -78,6 +78,11 @@
     margin: 10px 0;
 }
 
+.info .skill:nth-child(5) img {
+    width: 100px;
+    object-fit: cover;
+}
+
 .email-address {
     font-size: 14px;
     color: #aaa;
