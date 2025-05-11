@@ -738,13 +738,14 @@ body {
 /* Partners */
 .pn-section {
   margin: 100px auto;
+  padding: 20px;
   overflow: hidden;
 }
 
 .pn-title {
   display: flex;
   justify-content: center;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 500;
   margin-bottom: 50px;
 }
@@ -763,6 +764,7 @@ body {
   display: flex;
   gap: 50px;
   animation: scrollAnimation 40s linear infinite;
+  width: max-content;
 }
 
 @keyframes scrollAnimation {
@@ -784,4 +786,20 @@ body {
 .partner {
   width: 200px;
   margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .partners {
+    gap: 10px;
+  }
+
+  @keyframes scrollAnimation {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+}
 }

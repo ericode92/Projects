@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/My Dev/Ericreates Website/main/style.css">
     <link rel="stylesheet" href="/My Dev/Ericreates Website/common/header.css">
     <link rel="stylesheet" href="/My Dev/Ericreates Website/common/footer.css">
+    <link rel="stylesheet" href="/My Dev/Ericreates Website/common/dark.css">
+    <link rel="stylesheet" href="contact.css">
     <title>Ericreates | Contant</title>
     <link rel="icon" type="image/png" href="/My Dev/Ericreates Website/images/Logo/favicon.png" />
 </head>
@@ -51,7 +53,56 @@
             </div>
         </div>
     </nav>
+
+
+    <!-- Contact me content-->
+    <div class="contact-wrap">
+        <div class="contact-form">
+            <div class="slider">
+                <!-- Slide 1: Form -->
+                <div class="slide">
+                <div class="submit-form">
+                    <h2 class="form-title">Contact Me</h2>
+                    <form id="form">
+                    <div class="input-box">
+                        <input type="text" name="name" class="input" id="name" placeholder="Full Name" required />
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" class="input" id="email" placeholder="Email" required />
+                    </div>
+                    <div class="select-box">
+                        <select name="category" id="catesel" required>
+                        <option value="">Select category</option>
+                        <option value="UX/UI">UX/UI</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Ecommerce">E-Commerce</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Product Package Design">Product Package Design</option>
+                        <option value="Product Information Design">Product Information Design</option>
+                        <option value="Logo Design">Logo Design</option>
+                        <option value="Print out Design">Print out Design</option>
+                        <option value="etc">Et Cetera</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="message" class="input" id="message" placeholder="Write your request here." required></textarea>
+                    </div>
+                    <button type="submit" class="sbtn" id="sbtn">Send</button>
+                    </form>
+                </div>
+                </div>
+
+                <!-- Slide 2: Success message -->
+                <div class="slide success-message">
+                <h2>Thank You!</h2>
+                <p>Your request has been successfully submitted.</p>
+                <button class="back-btn" id="backBtn">← Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
+
     <!-- Footer -->
     <div class="footer">
         <div class="footer-head">
@@ -98,6 +149,16 @@
 <script src="/My Dev/Ericreates Website/main/index.js"></script>
 <script src="/My Dev/Ericreates Website/search/search.js"></script>
 <script src="/My Dev/Ericreates Website/search/detail.js"></script>
+<script src="contact.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "_4Wde3XtjOFz8L-_U",
+      });
+   })();
+</script>
 
 </body>
 </html>
