@@ -1,84 +1,107 @@
-/* Default */
+/* ===== DEFAULT (Light Mode) ===== */
 body {
   background-color: #ffffff;
   color: #000000;
 }
 
-/* Apply dark mode automatically */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212 !important;
-    color: #e9e9e9;
-  }
+/* Top Header */
+#topHeader {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
 
-  /* Search */
-  #search-input, #search-input:focus {
+.top-controls button {
+  color: #000;
+}
+
+/* ===== DARK MODE: class method ===== */
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #e9e9e9;
+}
+
+body.dark-mode #topHeader {
+  background-color: #121212;
+  border-bottom: 1px solid #333;
+}
+
+body.dark-mode .top-controls button {
+  color: #eee;
+}
+
+body.dark-mode #search-input {
     color: #fff;
   }
 
-  #autocomplete-list {
-    color: #121212;
-  }
+body.dark-mode #autocomplete-list {
+  color: #121212;
+}
 
-  .result-card {
-    background-color: #121212 !important;
-    border: 1px solid #aaa;
-  }
+body.dark-mode .close-btn {
+  background-color: transparent;
+  color: #121212 !important;
+}
 
-  .result-card h3, #detail-container h1 {
-    color: #fff !important;
-  }
+body.dark-mode nav.shrinkable,
+body.dark-mode .footer,
+body.dark-mode .copyright,
+body.dark-mode .search-box,
+body.dark-mode .detail,
+body.dark-mode .contact-form,
+body.dark-mode .port-title,
+body.dark-mode .wrapper .items,
+body.dark-mode .splash-page,
+body.dark-mode .fa-bars {
+  background-color: #121212;
+  color: #e0e0e0;
+}
 
-  .result-card p, #detail-container p {
-    color: #aaa !important;
-  }
+body.dark-mode .introduct,
+body.dark-mode .detail {
+  background-color: transparent;
+}
 
-  /* Basic containers */
-  nav.shrinkable, .footer, .copyright, .search-box, .detail, .contact-form, .port-title, .wrapper .items, .splash-page, .fa-bars {
-    background-color: #121212;
-    color: #e0e0e0;
-  }
+body.dark-mode .carousel.showDetail .list .item:nth-child(2) .detail .specifications {
+  color: #aaa;
+}
 
-  /* Main */
-  .introduct, .detail {
-    background-color: transparent;
-  }
+body.dark-mode #prev,
+body.dark-mode #next,
+body.dark-mode .gra-service,
+body.dark-mode .dev-service,
+body.dark-mode #graCloseBtn,
+body.dark-mode #devCloseBtn {
+  color: #121212 !important;
+}
 
-  .carousel.showDetail .list .item:nth-child(2) .detail .specifications {
-    color: #aaa;
-  }
+body.dark-mode .about_as .title,
+body.dark-mode .des,
+body.dark-mode .typetext,
+body.dark-mode .rep-project {
+  color: #fff !important;
+}
 
-  #prev, #next, .gra-service, .dev-service, #graCloseBtn, #devCloseBtn {
-    color: #121212 !important;
-  }
+body.dark-mode .section-title {
+  color: #121212;
+}
 
-  /* About me */
-  .about_as .title, .des, .typetext, .rep-project {
-    color: #fff !important;
-  }
+body.dark-mode .pn-section {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
-  .section-title {
-    color: #121212;
-  }
+body.dark-mode .contact-form {
+  background-color: #121212 !important;
+  border: 1px solid #aaa;
+}
 
-  .pn-section {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
+body.dark-mode button,
+body.dark-mode .btn,
+body.dark-mode .fa-search,
+body.dark-mode .seeMore:hover {
+  background-color: #121212;
+  color: #ffffff !important;
+}
 
-  /* Contact */
-  .contact-form {
-    background-color: #121212 !important;
-    border: 1px solid #aaa;
-  }
-
-  /* Buttons */
-  button, .btn, .fa-search, .seeMore:hover {
-    background-color: #2a2a2a;
-    color: #ffffff !important;
-  }
-
-  /* Keep link color */
-  a {
-    color: #009ade;
-  }
+body.dark-mode a {
+  color: #009ade;
 }

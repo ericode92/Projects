@@ -1,3 +1,261 @@
+:root {
+  --top-header-height: 50px;
+}
+
+#topHeader {
+  height: var(--top-header-height);
+}
+
+#mainNav {
+  top: var(--top-header-height);
+}
+
+/* Top Header */
+#topHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 400px;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.top-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Toggle buttons */
+.top-controls button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.top-controls button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Hide Top Header when scroll down */
+nav.shrinkable.shrink + #topHeader {
+  display: none;
+}
+
+#topHeader.shrink {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+/* 🌙 Dark mode toggle switch */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: background-color 0.4s;
+  border-radius: 32px;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.icon.sun {
+  right: 6px;
+  color: #f9d71c;
+}
+
+.icon.moon {
+  left: 6px;
+  color: #333;
+}
+
+input:checked + .slider {
+  background-color: #444;
+}
+
+input:checked + .slider::before {
+  transform: translateX(32px);
+}
+
+@media (max-width: 768px) {
+  #topHeader {
+    padding: 8px 20px;
+  }
+
+  .top-controls button {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .theme-switch {
+    width: 48px;
+    height: 26px;
+  }
+
+  .slider::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  input:checked + .slider::before {
+    transform: translateX(22px);
+  }
+
+  .icon {
+    font-size: 12px;
+  }
+}
+
+/* 🌐 Language Switch */
+.lang-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+}
+
+.lang-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.lang-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: background-color 0.4s;
+  border-radius: 32px;
+}
+
+.lang-switch .slider::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.lang-switch .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  z-index: 1;
+  pointer-events: none;
+  font-weight: bold;
+}
+
+.lang-switch .icon.kr {
+  left: 6px;
+  color: #222;
+}
+
+.lang-switch input:checked + .slider .icon.kr {
+    color: #fff;
+}
+
+.lang-switch .icon.en {
+  right: 6px;
+  color: #222;
+}
+
+.lang-switch input:checked + .slider {
+  background-color: #444;
+}
+
+.lang-switch input:checked + .slider::before {
+  transform: translateX(32px);
+}
+
+@media (max-width: 768px) {
+  .lang-switch {
+    width: 48px;
+    height: 26px;
+  }
+
+  .lang-switch .slider::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .lang-switch input:checked + .slider::before {
+    transform: translateX(22px);
+  }
+
+  .lang-switch .icon {
+    font-size: 12px;
+  }
+}
+
+/* Main Nav */
+#mainNav {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    z-index: 999;
+    transition: top 0.3 ease;
+}
+
+#mainNav.shrink {
+    top: 0;
+}
+
 nav {
     display: flex;
     justify-content: space-between;

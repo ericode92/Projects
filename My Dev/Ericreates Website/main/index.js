@@ -1,3 +1,57 @@
+// Top Header
+function handleNavShrink() {
+  const nav = document.getElementById("mainNav");
+  const topHeader = document.getElementById("topHeader");
+
+  if (window.scrollY > 50) {
+    nav.classList.add("shrink");
+    topHeader.classList.add("shrink");
+  } else {
+    nav.classList.remove("shrink");
+    topHeader.classList.remove("shrink");
+  }
+}
+
+window.addEventListener("scroll", handleNavShrink);
+window.addEventListener("resize", handleNavShrink);
+window.addEventListener("DOMContentLoaded", handleNavShrink);
+
+// Dark mode & Language switcher toggle
+// 🌐 Language Switcher
+const langToggle = document.getElementById('toggle-lang');
+
+langToggle.addEventListener('change', function () {
+  const isKorean = this.checked;
+  console.log(isKorean ? 'KR selected' : 'EN selected');
+
+  // 향후 다국어 적용 시 여기에 실제 언어 전환 로직 추가
+});
+
+// Initial setting : detect device setting
+window.addEventListener('DOMContentLoaded', () => {
+  const userPref = localStorage.getItem('theme');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (userPref === 'dark' || (!userPref && systemPrefersDark)) {
+    document.body.classList.add('dark-mode');
+    document.getElementById('toggle-theme').textContent = '☀️';
+  } else {
+    document.body.classList.remove('dark-mode');
+    document.getElementById('toggle-theme').textContent = '🌙';
+  }
+});
+
+// Toggle button
+document.getElementById('toggle-theme').addEventListener('click', function () {
+  document.body.classList.toggle('dark-mode');
+
+  const isDark = document.body.classList.contains('dark-mode');
+  this.textContent = isDark ? '☀️' : '🌙';
+
+  // Save in Local
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});
+
 // Nav Hover Active
 document.addEventListener("DOMContentLoaded", () => {
   const current = window.location.pathname.split("/").pop(); // ex: about.html

@@ -1,6 +1,6 @@
 const btn = document.getElementById('sbtn');
 const form = document.getElementById('form');
-const slider = document.querySelector('.slider');
+const slider = document.querySelector('.form-slider');
 const backBtn = document.getElementById('backBtn');
 
 form.addEventListener('submit', function(event) {
