@@ -3,8 +3,8 @@
     "id": 1,
     "title": "김치스낵 자사몰 - 김칩스",
     "description": "솔루션(아임웹)과 프론트엔드 언어를 활용하여 제작한 쇼핑몰 입니다.",
-    "category": "웹 개발, 쇼핑몰",
-    "tags": ["HTML", "CSS", "JavaScript", "Ecommerce", "Responsive", "Website", "Development", "imweb", "아임웹", "김칩스", "쇼핑몰", "개발", "자사몰", "반응형"],
+    "category": "웹 개발, 온라인 쇼핑몰",
+    "tags": ["HTML", "CSS", "JavaScript", "Ecommerce", "Responsive", "Website", "Development", "imweb", "아임웹", "김칩스", "스낵", "쇼핑몰", "개발", "자사몰", "반응형"],
     "thumbnail": "/My Dev/Ericreates Website/images/Project/Website/Kimchips.jpg",
     "url": "https://kimchips.co.kr/"
   },
@@ -12,25 +12,457 @@
     "id": 2,
     "title": "메디컬 의류 쇼핑몰 - 메디치",
     "description": "솔루션(아임웹)을 활용하여 제작한 쇼핑몰 입니다.",
-    "category": "쇼핑몰",
+    "category": "온라인 쇼핑몰",
     "tags": ["Ecommerce", "Responsive", "Website", "imweb", "아임웹", "의류", "패션", "쇼핑몰", "자사몰", "반응형"],
     "thumbnail": "/My Dev/Ericreates Website/images/Project/Website/Medichee.jpg",
-    "url": "https://medichee.com"
-  },
-  {
-    "id": 2,
-    "title": "반응형 웹디자인",
-    "description": "모바일과 데스크탑을 지원하는 웹디자인.",
-    "category": "디자인",
-    "tags": ["Responsive", "CSS", "UI/UX"],
-    "thumbnail": "images/portfolio2.jpg"
+    "url": "https://medichee.com/"
   },
   {
     "id": 3,
-    "title": "반응형 웹디자인",
-    "description": "모바일과 데스크탑을 지원하는 웹디자인.",
-    "category": "디자인",
-    "tags": ["Responsive", "CSS", "UI/UX"],
-    "thumbnail": "images/portfolio2.jpg"
+    "title": "콘돔 쇼핑몰 - ARMOR",
+    "description": "솔루션(아임웹)과 프론트엔드 언어를 활용하여 제작한 자사몰 입니다.",
+    "category": "온라인 쇼핑몰, 개발",
+    "tags": ["HTML", "CSS", "JavaScript","Responsive", "Website", "imweb", "Ecommerce", "아임웹", "콘돔", "의료기기", "쇼핑몰", "자사몰", "반응형"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Website/Armor.jpg",
+    "url": "https://armorcondom.com/"
+  },
+  {
+    "id": 4,
+    "title": "패션 마스크 자사몰 - BreaTheSuit",
+    "description": "솔루션(아임웹)을 활용하여 제작한 온라인 쇼핑몰 입니다.",
+    "category": "온라인 쇼핑몰",
+    "tags": ["Responsive", "Website", "imweb", "Ecommerce", "아임웹", "패션마스크", "브리더수트", "필터 교체형", "쇼핑몰", "자사몰", "반응형"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Website/BreatheSuit.jpg",
+    "url": "https://www.breathesuit.com/"
+  },
+  {
+    "id": 5,
+    "title": "메디컬 의류 쇼핑몰 - 히스유니폼",
+    "description": "솔루션(아임웹)을 활용하여 제작한 온라인 자사몰 입니다.",
+    "category": "온라인 쇼핑몰",
+    "tags": ["Responsive", "Website", "imweb", "Ecommerce", "아임웹", "병원 의류", "패션", "메디컬 의류", "쇼핑몰", "자사몰", "반응형"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Website/Hisuniform.jpg",
+    "url": "https://hisuniform.co.kr/"
+  },
+  {
+    "id": 6,
+    "title": "쇼피파이 해외 자사몰 - 포트폴리오",
+    "description": "솔루션(쇼피파이)과 마크업 언어를 활용하여 제작한 해외 타겟 쇼핑몰 입니다.",
+    "category": "온라인 쇼핑몰",
+    "tags": ["HTML", "CSS", "JavaScript", "Liquid", "Responsive", "Website", "Ecommerce", "Shopify", "쇼피파이", "의류", "패션", "해외 쇼핑몰", "해외 자사몰", "반응형", "포트폴리오"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Website/Shopify.jpg",
+    "url": "https://wfashionsample.myshopify.com/password?_fd=0"
+  },
+  {
+    "id": 7,
+    "title": "콘돔 의료기기 자사몰 - 스킨엘리트",
+    "description": "솔루션(아임웹)과 프론트엔드 언어를 활용하여 제작한 콘돔 쇼핑몰 입니다.",
+    "category": "온라인 쇼핑몰, 개발",
+    "tags": ["HTML", "CSS", "JavaScript", "Responsive", "Website", "imweb", "Ecommerce", "아임웹", "콘돔", "의료기기", "쇼핑몰", "자사몰", "반응형"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Website/LifeStyles.jpg",
+    "url": "https://www.lifestyle-condom.com/"
+  },
+  {
+    "id": 8,
+    "title": "재단 법인 홈페이지 - 칠드런스퓨처",
+    "description": "솔루션(워드프레스)과 프론트엔드 언어를 활용하여 제작한 재단법인 홈페이지 입니다.",
+    "category": "홈페이지, 개발",
+    "tags": ["HTML", "CSS", "JavaScript", "Responsive", "Website", "WordPress", "워드프레스", "홈페이지", "재단법인", "회사", "다국어", "반응형"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Website/Children's Future.jpg",
+    "url": "https://childrensfuture.or.kr/"
+  },
+  {
+    "id": 9,
+    "title": "플레이보이 콘돔 자사몰 - PLAYBOY",
+    "description": "솔루션(아임웹)과 프론트엔드 언어를 활용하여 제작한 쇼핑몰 입니다.",
+    "category": "온라인 쇼핑몰, 개발",
+    "tags": ["HTML", "CSS", "JavaScript","Responsive", "Website", "imweb", "Ecommerce", "PLAYBOY", "플레이보이", "아임웹", "콘돔", "의료기기", "쇼핑몰", "자사몰", "반응형"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Website/Playboy.jpg",
+    "url": "https://www.playboycondom.co.kr/"
+  },
+  {
+    "id": 10,
+    "title": "무역회사 법인 홈페이지 - 신행이엔티",
+    "description": "솔루션(워드프레스)과 프론트엔드 언어를 활용하여 제작한 무역회사 법인 홈페이지 입니다.",
+    "category": "온라인 쇼핑몰",
+    "tags": ["HTML", "CSS", "JavaScript", "Responsive", "Website", "워드프레스", "홈페이지", "기업", "회사", "병원", "반응형", "다국어"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Website/Shinheng.jpg",
+    "url": "https://shinheng.co.kr/"
+  },
+  {
+    "id": 11,
+    "title": "UX/UI 디자인 - 데스크탑",
+    "description": "Figma를 활용한 모바일과 데스크탑을 지원하는 반응형 UX/UI 디자인 포트폴리오.",
+    "category": "그래픽 디자인",
+    "tags": ["Responsive", "Figma", "UI/UX", "Responsive", "디자인", "피그마", "데스크탑"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/UXUI/UXUI Portfolio PC.jpg"
+  },
+  {
+    "id": 12,
+    "title": "UX/UI 디자인 - 모바일 앱",
+    "description": "Figma를 활용한 모바일 앱 UX/UI 디자인 포트폴리오.",
+    "category": "그래픽 디자인",
+    "tags": ["Responsive", "Figma", "UI/UX", "Mobile", "App", "디자인", "피그마", "어플리케이션", "모바일 앱"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/UXUI/UXUI Portfolio Mobile.jpg"
+  },
+  {
+    "id": 13,
+    "title": "핑거 콘돔 단상자&호일 디자인 - 핑콘",
+    "description": "핑거콘돔 단상자 & 호일(낱개 포장) 제품 패키지 디자인 입니다.",
+    "category": "패키지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Package", "Design", "Product", "Mokc-up", "포토샵", "일러스트레이터", "패키지 디자인", "목업", "단상자", "호일"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Package/Fincon.jpg"
+  },
+  {
+    "id": 14,
+    "title": "파우치 타입 패키지 - 프앤칩",
+    "description": "Anchovy & Protein 건강 스낵 제품 패키지 디자인 입니다.",
+    "category": "패키지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Package", "Design", "Product", "Mokc-up", "Pouch", "포토샵", "일러스트레이터", "패키지 디자인", "목업", "파우치"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Package/pnchip.jpg"
+  },
+  {
+    "id": 15,
+    "title": "콘돔 단상자&호일 디자인 - 케어허",
+    "description": "의료기기 콘돔 단상자 & 호일(낱개 포장) 제품 패키지 디자인 입니다.",
+    "category": "패키지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Package", "Design", "Product", "Mokc-up", "포토샵", "일러스트레이터", "패키지 디자인", "목업", "단상자", "호일"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Package/Condom2.jpg"
+  },
+  {
+    "id": 16,
+    "title": "콘돔 단상자&호일 디자인 - 케어허",
+    "description": "의료기기 콘돔 단상자 & 호일(낱개 포장) 제품 패키지 디자인 입니다.",
+    "category": "패키지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Package", "Design", "Product", "Mokc-up", "포토샵", "일러스트레이터", "패키지 디자인", "목업", "단상자", "호일"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Package/Condom3.jpg"
+  },
+  {
+    "id": 17,
+    "title": "파우치 타입 패키지 - 김칩스",
+    "description": "김치스낵 제품 패키지 디자인 입니다.",
+    "category": "패키지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Package", "Design", "Product", "Mokc-up", "Pouch", "포토샵", "일러스트레이터", "패키지 디자인", "목업", "파우치"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Package/kimchips.jpg"
+  },
+  {
+    "id": 18,
+    "title": "파우치 타입 패키지 - 땅콩",
+    "description": "땅콩 제품 패키지 디자인 입니다.",
+    "category": "패키지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Package", "Design", "Product", "Mokc-up", "Pouch", "포토샵", "일러스트레이터", "패키지 디자인", "목업", "파우치"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Package/Peanut.jpg"
+  },
+  {
+    "id": 19,
+    "title": "라벨 타입 패키지 - 로베트토 건전지",
+    "description": "Robero 건전지 제품 라벨 디자인 입니다.",
+    "category": "패키지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Package", "Design", "Product", "Mokc-up", "Label", "포토샵", "일러스트레이터", "패키지 디자인", "목업", "라벨"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Package/Battery.jpg"
+  },
+  {
+    "id": 20,
+    "title": "콘돔 단상자&호일 디자인 - 아머",
+    "description": "의료기기 콘돔 단상자 & 호일(낱개 포장) 제품 패키지 디자인 입니다.",
+    "category": "패키지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Package", "Design", "Product", "Mokc-up", "포토샵", "일러스트레이터", "패키지 디자인", "목업", "단상자", "호일"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Package/Condom1.jpg"
+  },
+  {
+    "id": 21,
+    "title": "파우치&박스 타입 패키지 - 브리즈 티백 세트",
+    "description": "티백 제품 패키지 디자인 입니다.",
+    "category": "패키지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Package", "Design", "Product", "Mokc-up", "Pouch", "포토샵", "일러스트레이터", "패키지 디자인", "목업", "파우치"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Package/Tea Set.jpg"
+  },
+  {
+    "id": 22,
+    "title": "그래픽 디자인 - 웹디자인 등 (가로형)",
+    "description": "웹에서 사용되는 배너, 광고물, 포스터 등 작업물 입니다.",
+    "category": "그래픽 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Web", "Banner", "Poster", "포토샵", "일러스트레이터", "그래픽 디자인", "배너", "웹디자인"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Graphics/Portfolio_horizontal.jpg"
+  },
+  {
+    "id": 23,
+    "title": "그래픽 디자인 - 웹디자인 등 (세로형)",
+    "description": "웹에서 사용되는 배너, 광고물, 포스터 등 작업물 입니다.",
+    "category": "그래픽 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Web", "Banner", "Poster", "포토샵", "일러스트레이터", "그래픽 디자인", "배너", "웹디자인"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Graphics/Portfolio_vertical.jpg"
+  },
+  {
+    "id": 24,
+    "title": "그래픽 디자인 - 제품 소개서",
+    "description": "일러스트레이터로 작업한 김칩스 제품 소개서 입니다.",
+    "category": "그래픽 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Product Introduction", "포토샵", "일러스트레이터", "그래픽 디자인", "제품소개서"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Graphics/Portfolio_introduction_kimchips.jpg"
+  },
+  {
+    "id": 25,
+    "title": "그래픽 디자인 - 회사 소개서",
+    "description": "일러스트레이터로 작업한 회사 소개서 입니다.",
+    "category": "그래픽 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Company Introduction", "포토샵", "일러스트레이터", "그래픽 디자인", "회사소개서"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Graphics/Portfolio_introduction_shinheng.jpg"
+  },
+  {
+    "id": 26,
+    "title": "상세페이지 디자인 - 가구",
+    "description": "가구 제품 상세페이지 디자인 입니다.",
+    "category": "상세페이지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Furniture", "포토샵", "일러스트레이터", "그래픽", "디자인", "상세페이지", "가구"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Product_Info/Product Info_Furniture.jpg"
+  },
+  {
+    "id": 27,
+    "title": "상세페이지 디자인 - 식품, 음식, 밀키트 등",
+    "description": "음식, 식품, 밀키트 상세페이지 디자인 입니다.",
+    "category": "상세페이지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Food", "Meal-kit", "포토샵", "일러스트레이터", "그래픽", "디자인", "상세페이지", "식품", "음식", "밀키트"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Product_Info/Product Info_food.jpg"
+  },
+  {
+    "id": 28,
+    "title": "상세페이지 디자인 - 마스크 등",
+    "description": "패션마스크 브리더룩 상세페이지 디자인 입니다.",
+    "category": "상세페이지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Mask", "포토샵", "일러스트레이터", "그래픽", "디자인", "상세페이지", "마스크"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Product_Info/Product Info_BreaTheLook.jpg"
+  },
+  {
+    "id": 29,
+    "title": "상세페이지 디자인 - 디퓨저, 향수 등",
+    "description": "디퓨저, 향수 상세페이지 디자인 입니다.",
+    "category": "상세페이지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Diffuser", "Perfume", "포토샵", "일러스트레이터", "그래픽", "디자인", "상세페이지", "디퓨저", "향수"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Product_Info/Product Info_Diffuser.jpg"
+  },
+  {
+    "id": 30,
+    "title": "상세페이지 디자인 - 케이크, 디저트 등",
+    "description": "케이크 상세페이지 디자인 입니다.",
+    "category": "상세페이지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Cake", "Dessert", "포토샵", "일러스트레이터", "그래픽", "디자인", "상세페이지", "케잌", "디저트"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Product_Info/Product Info_Dessert.jpg"
+  },
+  {
+    "id": 31,
+    "title": "상세페이지 디자인 - 커피, 차 등",
+    "description": "커피 상세페이지 디자인 입니다.",
+    "category": "상세페이지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Cofee", "Tea", "포토샵", "일러스트레이터", "그래픽", "디자인", "상세페이지", "커피", "차"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Product_Info/Product Info_Coffee.jpg"
+  },
+  {
+    "id": 32,
+    "title": "상세페이지 디자인 - 콘돔, 의료기기 등",
+    "description": "콘돔 상세페이지 디자인 입니다.",
+    "category": "상세페이지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Condom", "Medical Device", "포토샵", "일러스트레이터", "그래픽", "디자인", "상세페이지", "콘돔", "의료기기"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Product_Info/Product Info_Condoms.jpg"
+  },
+  {
+    "id": 33,
+    "title": "상세페이지 디자인 - 의류, 패션 등",
+    "description": "메디컬 의류 상세페이지 디자인 입니다.",
+    "category": "상세페이지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Clothes", "Fashion", "포토샵", "일러스트레이터", "그래픽", "디자인", "상세페이지", "의류", "패션", "룩북"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Product_Info/Product Info_HISuniform.jpg"
+  },
+  {
+    "id": 34,
+    "title": "상세페이지 디자인 - 화장품 등",
+    "description": "마사지 오일 상세페이지 디자인 입니다.",
+    "category": "상세페이지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Cosmetic", "포토샵", "일러스트레이터", "그래픽", "디자인", "상세페이지", "화장품"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Product_Info/Product Info_Cosmetics.jpg"
+  },
+  {
+    "id": 35,
+    "title": "상세페이지 디자인 - 악세서리 등",
+    "description": "악세서리 상세페이지 디자인 입니다.",
+    "category": "상세페이지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Accessory", "Jewelry", "포토샵", "일러스트레이터", "그래픽", "디자인", "상세페이지", "악세서리", "목걸이", "반지", "쥬얼리"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Product_Info/Product Info_Accessory.jpg"
+  },
+  {
+    "id": 36,
+    "title": "상세페이지 디자인 - 가방, 잡화 등",
+    "description": "백팩 상세페이지 디자인 입니다.",
+    "category": "상세페이지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Backpack", "Bag", "Goods", "포토샵", "일러스트레이터", "그래픽", "디자인", "상세페이지", "백팩", "가방", "잡화"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Product_Info/Product Info_Backpack.jpg"
+  },
+  {
+    "id": 37,
+    "title": "상세페이지 디자인 - 패션, 컬렉션, 의류 등",
+    "description": "패션 상세페이지 디자인 입니다.",
+    "category": "상세페이지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Fashion", "Clothes", "Collection", "Lookbook", "포토샵", "일러스트레이터", "그래픽", "디자인", "상세페이지", "패션", "컬렉션", "의류", "룩북"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Product_Info/Product Info_Cloth.jpg"
+  },
+  {
+    "id": 38,
+    "title": "상세페이지 디자인 - 스낵 등",
+    "description": "스낵 상세페이지 디자인 입니다.",
+    "category": "상세페이지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Snack", "Chips", "포토샵", "일러스트레이터", "그래픽", "디자인", "상세페이지", "스낵", "과자", "간식"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Product_Info/Product Info_Kimchips Garlic Cheese.jpg"
+  },
+  {
+    "id": 39,
+    "title": "상세페이지 디자인 - 의류, 패션 등",
+    "description": "메디컬 의류 상세페이지 디자인 입니다.",
+    "category": "상세페이지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Clothes", "Fashion", "포토샵", "일러스트레이터", "그래픽", "디자인", "상세페이지", "의류", "패션", "룩북"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Product_Info/Product Info_Medichee.jpg"
+  },
+  {
+    "id": 40,
+    "title": "BI 로고 디자인 - DEER",
+    "description": "예술 카테고리 일러스트 타입 로고 디자인 입니다.",
+    "category": "BI/CI 로고 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Logo", "Mock up", "Brand Identity", "Company Identity", "포토샵", "일러스트레이터", "그래픽", "디자인", "로고", "목업", "BI", "CI"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Logo/Deer.jpg"
+  },
+  {
+    "id": 41,
+    "title": "CI 로고 디자인 - CLEANSTORE",
+    "description": "초음파식기세척기 회사 로고 디자인 입니다.",
+    "category": "BI/CI 로고 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Logo", "Mock up", "Brand Identity", "Company Identity", "포토샵", "일러스트레이터", "그래픽", "디자인", "로고", "목업", "BI", "CI"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Logo/CleanStore.jpg"
+  },
+  {
+    "id": 42,
+    "title": "BI 로고 디자인 - BreaTheSuit",
+    "description": "패션마스크 브리더수트 로고 디자인 입니다.",
+    "category": "BI/CI 로고 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Logo", "Mock up", "Brand Identity", "Company Identity", "포토샵", "일러스트레이터", "그래픽", "디자인", "로고", "목업", "BI", "CI"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Logo/BreaTheSuit.jpg"
+  },
+  {
+    "id": 43,
+    "title": "CI 로고 디자인 - Medichee",
+    "description": "메디컬 의류 회사 텍스트 타입 로고 디자인 입니다.",
+    "category": "BI/CI 로고 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Logo", "Mock up", "Brand Identity", "Company Identity", "포토샵", "일러스트레이터", "그래픽", "디자인", "로고", "목업", "BI", "CI"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Logo/Medichee.jpg"
+  },
+  {
+    "id": 44,
+    "title": "BI 로고 디자인 - SOLDOUT",
+    "description": "밴드 로고 디자인 입니다.",
+    "category": "BI/CI 로고 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Logo", "Mock up", "Brand Identity", "Company Identity", "포토샵", "일러스트레이터", "그래픽", "디자인", "로고", "목업", "BI", "CI"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Logo/Soldout.jpg"
+  },
+  {
+    "id": 45,
+    "title": "CI 로고 디자인 - Hyenaily",
+    "description": "헤어샵 텍스트 타입 로고 디자인 입니다.",
+    "category": "BI/CI 로고 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Logo", "Mock up", "Brand Identity", "Company Identity", "포토샵", "일러스트레이터", "그래픽", "디자인", "로고", "목업", "BI", "CI"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Logo/Hyenaily.jpg"
+  },
+  {
+    "id": 46,
+    "title": "BI 로고 디자인 - 김치부각",
+    "description": "부각 과자 일러스트 타입 로고 디자인 입니다.",
+    "category": "BI/CI 로고 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Logo", "Mock up", "Brand Identity", "Company Identity", "포토샵", "일러스트레이터", "그래픽", "디자인", "로고", "목업", "BI", "CI"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Logo/Kimchi Bugak.jpg"
+  },
+  {
+    "id": 47,
+    "title": "BI 로고 디자인 - 김칩스",
+    "description": "김치스낵 텍스트 타입 로고 디자인 입니다.",
+    "category": "BI/CI 로고 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Logo", "Mock up", "Brand Identity", "Company Identity", "포토샵", "일러스트레이터", "그래픽", "디자인", "로고", "목업", "BI", "CI"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Logo/Kimchips.jpg"
+  },
+  {
+    "id": 48,
+    "title": "CI 로고 디자인 - Whitecanvas",
+    "description": "미술용품 매장 텍스트 타입 로고 디자인 입니다.",
+    "category": "BI/CI 로고 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Logo", "Mock up", "Brand Identity", "Company Identity", "포토샵", "일러스트레이터", "그래픽", "디자인", "로고", "목업", "BI", "CI"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Logo/WhiteCanvas.jpg"
+  },
+  {
+    "id": 49,
+    "title": "인쇄물 디자인 - 3단접 리플렛",
+    "description": "2번 접히는 제품 소개 리플렛 디자인 입니다.",
+    "category": "인쇄물 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Print Out", "Mock up", "Leaflet", "포토샵", "일러스트레이터", "그래픽", "디자인", "리플렛", "카달로그", "인쇄물", "목업"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Print Out/Leaflet_Kimchips.jpg"
+  },
+  {
+    "id": 50,
+    "title": "인쇄물 디자인 - 전시회 판넬",
+    "description": "원단 전시회 벽면 판넬 디자인 입니다.",
+    "category": "인쇄물 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Print Out", "Mock up", "Panel", "Poster", "포토샵", "일러스트레이터", "그래픽", "디자인", "판넬", "포스터", "인쇄물", "목업"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Print Out/center panel.jpg"
+  },
+  {
+    "id": 51,
+    "title": "인쇄물 디자인 - 카달로그",
+    "description": "제품 소개 카달로그 디자인 입니다.",
+    "category": "인쇄물 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Print Out", "Mock up", "Catalogue", "포토샵", "일러스트레이터", "그래픽", "디자인", "리플렛", "카달로그", "인쇄물", "목업"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Print Out/Leaflet_USW Dishwasher.jpg"
+  },
+  {
+    "id": 52,
+    "title": "인쇄물 디자인 - 전단지",
+    "description": "제품 소개 전단지 디자인 입니다.",
+    "category": "인쇄물 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Print Out", "Mock up", "Flyer", "포토샵", "일러스트레이터", "그래픽", "디자인", "전단지", "플라이어", "인쇄물", "목업"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Print Out/Leaflet_LifeStyles.jpg"
+  },
+  {
+    "id": 53,
+    "title": "인쇄물 디자인 - X배너",
+    "description": "엑스배너 디자인 입니다.",
+    "category": "인쇄물 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Print Out", "Mock up", "Standing Banner", "포토샵", "일러스트레이터", "그래픽", "디자인", "엑스배너", "스탠딩 배너", "인쇄물", "목업"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Print Out/Standing Banner_SKYN1.jpg"
+  },
+  {
+    "id": 54,
+    "title": "인쇄물 디자인 - 제품 택",
+    "description": "제품 택 디자인 입니다.",
+    "category": "인쇄물 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Print Out", "Mock up", "Product Tag", "포토샵", "일러스트레이터", "그래픽", "디자인", "제품 택", "인쇄물", "목업"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Print Out/Clothes Tag_HEIQ.jpg"
+  },
+  {
+    "id": 55,
+    "title": "인쇄물 디자인 - 스티커",
+    "description": "스티커 디자인 입니다.",
+    "category": "인쇄물 디자인",
+    "tags": ["Photoshop", "Illustrator", "Graphic", "Design", "Print Out", "Mock up", "Sticker", "포토샵", "일러스트레이터", "그래픽", "디자인", "스티커", "인쇄물", "목업"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Print Out/Sticker_Kimchips.jpg"
+  },
+  {
+    "id": 56,
+    "title": "선물 세트 패키지 - 대추호두말이",
+    "description": "대추호두말이 건강 간식 포장박스 & 낱개 포장 라벨 제품 패키지 디자인 입니다.",
+    "category": "패키지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Package", "Design", "Product", "Mokc-up", "Label", "Gift Set", "포토샵", "일러스트레이터", "패키지 디자인", "목업", "선물세트", "라벨"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Package/WinJ.jpg"
+  },
+  {
+    "id": 57,
+    "title": "제품 세트 패키지 - 브리더수트",
+    "description": "패션마스크 풀 세트 박스 구성 기획 & 패키지 디자인 입니다.",
+    "category": "패키지 디자인",
+    "tags": ["Photoshop", "Illustrator", "Package", "Design", "Product", "Mokc-up", "Set Box", "Box Layer", "Leaflet", "포토샵", "일러스트레이터", "패키지 디자인", "목업", "세트", "박스", "리플렛", "복잡한 구성"],
+    "thumbnail": "/My Dev/Ericreates Website/images/Project/Package/BreaTheSuit.jpg"
   }
 ]
