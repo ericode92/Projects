@@ -67,3 +67,26 @@
   .back-button:hover, .visit-button:hover {
     background-color: #007bb8;
   }
+
+/* Share button */
+.share-button {
+  background: none;
+  border: 1px solid #aaa;
+  border-radius: 999px;
+  color: #555;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 4px 10px;
+  transition: color 0.3s ease;
+}
+
+.share-button:hover {
+  color: #009ade;
+}
+
+@media (max-width: 768px) {
+  .share-button {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}

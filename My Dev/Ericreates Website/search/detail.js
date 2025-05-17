@@ -24,7 +24,12 @@ async function loadDetail() {
   const backLink = query ? `search.html?query=${encodeURIComponent(query)}` : 'search.html';
 
   container.innerHTML = `
-    <h1>${item.title}</h1>
+    <h1 style="display: flex; justify-content: space-between; align-items: center;">
+      <span>${item.title}</span>
+      <button class="share-button" title="공유하기">
+        <i class="fa-solid fa-share-nodes"></i>
+      </button>
+    </h1>
     <img src="${item.thumbnail}" alt="${item.title}">
     <p>${item.description}</p>
     <p><strong>Category:</strong> ${item.category}</p>
@@ -37,3 +42,26 @@ async function loadDetail() {
 }
 
 loadDetail();
+
+
+//Share button
+document.addEventListener("click", function (e) {
+  if (e.target.closest(".share-button")) {
+    const shareUrl = window.location.href;
+
+    if (navigator.share) {
+      // Mobile share API
+      navigator.share({
+        title: document.title,
+        url: shareUrl,
+      }).catch(console.error);
+    } else {
+      // Desktop Share in clipboard
+      navigator.clipboard.writeText(shareUrl).then(() => {
+        alert("링크가 복사되었습니다!");
+      }).catch(() => {
+        alert("복사에 실패했습니다.");
+      });
+    }
+  }
+});

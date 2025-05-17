@@ -183,11 +183,13 @@
 
     .wrapper .items {
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: start;
+      padding: 10px 20px;
     }
 
     .items span {
       padding: 7px 10px;
       margin: 5px 2px;
+      font-size: 12px;
     }
   }
