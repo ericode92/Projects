@@ -19,7 +19,7 @@ searchInput.addEventListener('input', function () {
 function handleSearch() {
   const keyword = searchInput.value.trim();
   if (keyword) {
-    window.location.href = `/My Dev/Ericreates Website/search/search.html?query=${encodeURIComponent(keyword)}`;
+    window.location.href = `/My Dev/Ericreates Website/en/search.html?query=${encodeURIComponent(keyword)}`;
   }
 }
 
@@ -106,7 +106,7 @@ searchInput.addEventListener("input", () => {
 
 function performSearch(keyword) {
   localStorage.setItem("searchQuery", keyword);
-  window.location.href = "/My Dev/Ericreates Website/search/search.html";
+  window.location.href = "/My Dev/Ericreates Website/en/search.html";
 }
 
 document.getElementById("search-button").addEventListener("click", () => {
@@ -138,7 +138,7 @@ document.getElementById('search-popup').addEventListener('click', (e) => {
 document.getElementById('popup-search-button').addEventListener('click', function () {
   const keyword = document.getElementById('popup-search-input').value.trim();
   if (keyword) {
-    window.location.href = `/My Dev/Ericreates Website/search/search.html?query=${encodeURIComponent(keyword)}`;
+    window.location.href = `/My Dev/Ericreates Website/en/search.html?query=${encodeURIComponent(keyword)}`;
   }
 });
 
@@ -147,7 +147,7 @@ popupSearchInput.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {
     const keyword = popupSearchInput.value.trim();
     if (keyword) {
-      window.location.href = `/My Dev/Ericreates Website/search/search.html?query=${encodeURIComponent(keyword)}`;
+      window.location.href = `/My Dev/Ericreates Website/en/search.html?query=${encodeURIComponent(keyword)}`;
     }
   }
 });
@@ -180,7 +180,7 @@ document.getElementById('popup-search-input').addEventListener('input', function
         li.textContent = item.title;
         li.addEventListener('click', () => {
           document.getElementById('popup-search-input').value = item.title;
-          window.location.href = `/My Dev/Ericreates Website/search/search.html?query=${encodeURIComponent(item.title)}`;
+          window.location.href = `/My Dev/Ericreates Website/en/search.html?query=${encodeURIComponent(item.title)}`;
         });
         list.appendChild(li);
       });

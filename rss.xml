@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Ericreates Blog</title>
+    <link>https://ericreates.com</link>
+    <description>에릭의 최신 소식과 디자인/개발 인사이트</description>
+    <language>ko</language>
+    <lastBuildDate>Sat, 17 May 2025 12:00:00 +0900</lastBuildDate>
+    <item>
+      <title>에릭크리에이츠 런칭!</title>
+      <link>https://ericreates.com/launch-news.html</link>
+      <description>에릭의 포트폴리오 웹사이트가 공식 런칭되었습니다.</description>
+      <pubDate>Sat, 17 May 2025 12:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>
