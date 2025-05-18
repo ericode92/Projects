@@ -18,13 +18,15 @@ window.addEventListener("DOMContentLoaded", handleNavShrink);
 
 // Dark mode & Language switcher toggle
 // 🌐 Language Switcher
-const langToggle = document.getElementById('toggle-lang');
-
-langToggle.addEventListener('change', function () {
+document.getElementById('toggle-lang').addEventListener('change', function () {
   const isKorean = this.checked;
-  console.log(isKorean ? 'KR selected' : 'EN selected');
+  const currentPath = window.location.pathname;
 
-  // 향후 다국어 적용 시 여기에 실제 언어 전환 로직 추가
+  if (isKorean) {
+    window.location.href = currentPath.replace('/en/', '/kr/');
+  } else {
+    window.location.href = currentPath.replace('/kr/', '/en/');
+  }
 });
 
 // Initial setting : detect device setting

@@ -9,20 +9,30 @@
     <link rel="stylesheet" href="/My Dev/Ericreates Website/common/footer.css">
     <link rel="stylesheet" href="/My Dev/Ericreates Website/common/dark.css">
     <link rel="stylesheet" href="/My Dev/Ericreates Website/search/search.css">
-  <title>Ericreates Portfolio Search Result</title>
+  <title>에릭크리에이츠 포트폴리오 검색 결과</title>
   <link rel="icon" type="image/png" href="/My Dev/Ericreates Website/images/Logo/favicon.png" />
 
-  <!-- SEO -->
+  <link rel="alternate" hreflang="ko" href="https://ericreates.com/" />
+    <link rel="alternate" hreflang="en" href="https://ericreates.com/en/" />
+    <script>
+        // Redirect to English version if user's browser is in English
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang.startsWith("en")) {
+        window.location.href = "/en/";
+        }
+    </script>
+
+    <!-- SEO -->
     <meta name="description" content="디자인 외주 │ UXUI 디자인 │ 그래픽디자인 │ 홈페이지 개발 │ 쇼핑몰 개발 │ 인쇄물디자인 │ 제품 패키지디자인 │ 상세 페이지 디자인 │ 12년 이상 디자인 경력 │ 1000건 이상 프로젝트 완료">
-    <meta name="keywords" content="Ericreates, portfolio, developer, designer, web design, web development, programming, ecommerce, website, wordpress, woocommerce, shopify">
+    <meta name="keywords" content="에릭크리에이츠, 웹개발, 홈페이지, 쇼핑몰, 개발, 디자인, 개발자, 웹디자인, 패키지 디자인, 상세페이지, 로고, 인쇄물, 아임웹, 카페24, 독립몰, 워드프레스, 우커머스, 쇼피파이, 프론트엔드, 백엔드, 홈페이지 제작, 쇼핑몰 제작">
     <meta name="author" content="Ericreates">
 
     <!-- Open Graph-->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Ericreates Portfolio Search Result">
+    <meta property="og:title" content="에릭크리에이츠 포트폴리오 검색 결과">
     <meta property="og:description" content="디자인 외주 │ UXUI 디자인 │ 그래픽디자인 │ 홈페이지 개발 │ 쇼핑몰 개발 │ 인쇄물디자인 │ 제품 패키지디자인 │ 상세 페이지 디자인 │ 12년 이상 디자인 경력 │ 1000건 이상 프로젝트 완료">
     <meta property="og:url" content="https://ericreates.com/">
-    <meta property="og:site_name" content="Ericreates │ 에릭크리에이츠">
+    <meta property="og:site_name" content="Eric'reates │ 에릭크리에이츠">
     <meta property="og:image" content="/My Dev/Ericreates Website/images/logo/main logo.png">
 
     <!-- Twitter Card -->
@@ -58,15 +68,15 @@
     </div>
 
     <nav id="mainNav" class="shrinkable">
-      <a href="/My Dev/Ericreates Website/en/index.html"><img src="/My Dev/Ericreates Website/images/Logo/main logo.png" alt="ericreates"></a>
+      <a href="/My Dev/Ericreates Website/kr/index.html"><img src="/My Dev/Ericreates Website/images/Logo/main logo.png" alt="ericreates"></a>
 
       <div class="nav-lists" id="navList">
           <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
               <ul>
-                <li><a href="/My Dev/Ericreates Website/en/index.html">HOME</a></li>
-                <li><a href="/My Dev/Ericreates Website/en/portfolios.html">PORTFOLIOS</a></li>
-                <li><a href="/My Dev/Ericreates Website/en/about_me.html">ABOUT ME</a></li>
-                <li><a href="/My Dev/Ericreates Website/en/contact.html">CONTACT</a></li>
+                <li><a href="/My Dev/Ericreates Website/kr/index.html">HOME</a></li>
+                <li><a href="/My Dev/Ericreates Website/kr/portfolios.html">PORTFOLIOS</a></li>
+                <li><a href="/My Dev/Ericreates Website/kr/about_me.html">ABOUT ME</a></li>
+                <li><a href="/My Dev/Ericreates Website/kr/contact.html">CONTACT</a></li>
               </ul>
       </div>
 
@@ -77,7 +87,7 @@
 
       <div class="header-search">
           <div class="search-box">
-              <input type="text" id="search-input" placeholder="Search portofolios" autocomplete="off">
+              <input type="text" id="search-input" placeholder="포트폴리오 검색..." autocomplete="off">
               <button id="search-button">
                   <i class="fas fa-search"></i>
               </button>
@@ -89,8 +99,8 @@
       <!-- Mobile Search Modal -->
       <div id="search-popup" class="search-popup hidden">
           <div class="popup-content">
-            <input id="popup-search-input" type="text" placeholder="Search Portfolios...">
-            <button id="popup-search-button">Search</button>
+            <input id="popup-search-input" type="text" placeholder="포트폴리오 검색...">
+            <button id="popup-search-button">검색</button>
             <ul id="popup-autocomplete-list" class="hidden"></ul>
             <button id="close-search-modal" class="close-btn">✕</button>
           </div>
@@ -103,48 +113,48 @@
     </button>
 
   <!-- Search Result -->
-  <h1>Search result</h1>
+  <h1>검색 결과</h1>
   <div class="search-results" id="search-results"></div>
   
   <!-- Footer -->
-  <div class="footer">
-    <div class="footer-head">
-        <img src="/My Dev/Ericreates Website/images/Logo/favicon.png" alt="ericreates logo">
-            <div class="footer-text">ERICREATES<br>Develop Your Website<br>Design Your Needs</div>
-        <div class="social-media">
-            <a href="mailto:ericreates92@gmail.com">
-                <i class="fa-solid fa-envelope" target="_blank"></i>
-            </a>
-            <a href="https://www.instagram.com/ericreates_/" target="_blank">
-                <i class="fa-brands fa-square-instagram"></i>
-            </a>
-            <a href="https://github.com/ericode92" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
+    <div class="footer">
+        <div class="footer-head">
+            <img src="/My Dev/Ericreates Website/images/Logo/favicon.png" alt="ericreates logo">
+                <div class="footer-text">에릭크리에이츠<br>홈페이지|쇼핑몰 개발<br>각종 디자인 작업</div>
+            <div class="social-media">
+                <a href="mailto:ericreates92@gmail.com">
+                    <i class="fa-solid fa-envelope" target="_blank"></i>
+                </a>
+                <a href="https://www.instagram.com/ericreates_/" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://github.com/ericode92" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
         </div>
-    </div>
 
-    <div class="footer-content">
-        <div class="info">
-            <span class="skill-text">SKILLS</span>
-                <ul>
-                    <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/HTML5_logo.png" alt="html"></li>
-                    <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/CSS3_logo.png" alt="css"></li>
-                    <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/JavaScript_logo.png" alt="javascript"></li>
-                    <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/WordPress_blue_logo.svg.png" alt="wordpress"></li>
-                    <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/Shopify_logo.svg.png" alt="shopify"></li>
-                    <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/Python-logo.png" alt="python"></li>
-                    <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/figma.png" alt="figma"></li>
-                    <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/photoshop.png" alt="photoshop"></li>
-                    <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/illustrator.png" alt="illustrator"></li>
-                </ul>
-            <span class="email-address">ericreates92@gmail.com</span>
+        <div class="footer-content">
+            <div class="info">
+                <span class="skill-text">사용 기술</span>
+                    <ul>
+                        <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/HTML5_logo.png" alt="html"></li>
+                        <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/CSS3_logo.png" alt="css"></li>
+                        <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/JavaScript_logo.png" alt="javascript"></li>
+                        <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/WordPress_blue_logo.svg.png" alt="wordpress"></li>
+                        <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/Shopify_logo.svg.png" alt="shopify"></li>
+                        <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/Python-logo.png" alt="python"></li>
+                        <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/figma.png" alt="figma"></li>
+                        <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/photoshop.png" alt="photoshop"></li>
+                        <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/illustrator.png" alt="illustrator"></li>
+                    </ul>
+                <span class="email-address">ericreates92@gmail.com</span>
+            </div>
         </div>
     </div>
-</div>
-<div class="copyright">
-    ⓒ ERICREATES. ALL RIGHTS RESERVED.
-</div>
+    <div class="copyright">
+        ⓒ ERICREATES. ALL RIGHTS RESERVED.
+    </div>
 
 <script src="/My Dev/Ericreates Website/main/index.js"></script>
 <script src="/My Dev/Ericreates Website/search/search.js"></script>

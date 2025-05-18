@@ -9,20 +9,30 @@
     <link rel="stylesheet" href="/My Dev/Ericreates Website/common/footer.css">
     <link rel="stylesheet" href="/My Dev/Ericreates Website/common/dark.css">
     <link rel="stylesheet" href="/My Dev/Ericreates Website/contact/contact.css">
-    <title>Ericreates | Web Development & Graphic Design Request</title>
+    <title>에릭크리에이츠 | 홈페이지 & 쇼핑몰 제작 & 제품 패키지 & 웹디자인 전문</title>
     <link rel="icon" type="image/png" href="/My Dev/Ericreates Website/images/Logo/favicon.png" />
+
+    <link rel="alternate" hreflang="ko" href="https://ericreates.com/" />
+    <link rel="alternate" hreflang="en" href="https://ericreates.com/en/" />
+    <script>
+        // Redirect to English version if user's browser is in English
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang.startsWith("en")) {
+        window.location.href = "/en/";
+        }
+    </script>
 
     <!-- SEO -->
     <meta name="description" content="디자인 외주 │ UXUI 디자인 │ 그래픽디자인 │ 홈페이지 개발 │ 쇼핑몰 개발 │ 인쇄물디자인 │ 제품 패키지디자인 │ 상세 페이지 디자인 │ 12년 이상 디자인 경력 │ 1000건 이상 프로젝트 완료">
-    <meta name="keywords" content="Ericreates, portfolio, developer, designer, web design, web development, programming, ecommerce, website, wordpress, woocommerce, shopify">
+    <meta name="keywords" content="에릭크리에이츠, 웹개발, 홈페이지, 쇼핑몰, 개발, 디자인, 개발자, 웹디자인, 패키지 디자인, 상세페이지, 로고, 인쇄물, 아임웹, 카페24, 독립몰, 워드프레스, 우커머스, 쇼피파이, 프론트엔드, 백엔드, 홈페이지 제작, 쇼핑몰 제작">
     <meta name="author" content="Ericreates">
 
     <!-- Open Graph-->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Ericreates | Web Development & Graphic Design Request">
+    <meta property="og:title" content="에릭크리에이츠 | 홈페이지 & 쇼핑몰 제작 & 제품 패키지 & 웹디자인 전문">
     <meta property="og:description" content="디자인 외주 │ UXUI 디자인 │ 그래픽디자인 │ 홈페이지 개발 │ 쇼핑몰 개발 │ 인쇄물디자인 │ 제품 패키지디자인 │ 상세 페이지 디자인 │ 12년 이상 디자인 경력 │ 1000건 이상 프로젝트 완료">
     <meta property="og:url" content="https://ericreates.com/">
-    <meta property="og:site_name" content="Ericreates │ 에릭크리에이츠">
+    <meta property="og:site_name" content="Eric'reates │ 에릭크리에이츠">
     <meta property="og:image" content="/My Dev/Ericreates Website/images/logo/main logo.png">
 
     <!-- Twitter Card -->
@@ -58,15 +68,15 @@
     </div>
 
     <nav id="mainNav" class="shrinkable">
-        <a href="/My Dev/Ericreates Website/en/index.html"><img src="/My Dev/Ericreates Website/images/Logo/main logo.png" alt="ericreates"></a>
+        <a href="/My Dev/Ericreates Website/kr/index.html"><img src="/My Dev/Ericreates Website/images/Logo/main logo.png" alt="ericreates"></a>
 
         <div class="nav-lists" id="navList">
             <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="/My Dev/Ericreates Website/en/index.html">HOME</a></li>
-                    <li><a href="/My Dev/Ericreates Website/en/portfolios.html">PORTFOLIOS</a></li>
-                    <li><a href="/My Dev/Ericreates Website/en/about_me.html">ABOUT ME</a></li>
-                    <li><a href="/My Dev/Ericreates Website/en/contact.html">CONTACT</a></li>
+                    <li><a href="/My Dev/Ericreates Website/kr/index.html">HOME</a></li>
+                    <li><a href="/My Dev/Ericreates Website/kr/portfolios.html">PORTFOLIOS</a></li>
+                    <li><a href="/My Dev/Ericreates Website/kr/about_me.html">ABOUT ME</a></li>
+                    <li><a href="/My Dev/Ericreates Website/kr/contact.html">CONTACT</a></li>
                 </ul>
         </div>
 
@@ -77,7 +87,7 @@
 
         <div class="header-search">
             <div class="search-box">
-                <input type="text" id="search-input" placeholder="Search portofolios" autocomplete="off">
+                <input type="text" id="search-input" placeholder="포트폴리오 검색..." autocomplete="off">
                 <button id="search-button">
                     <i class="fas fa-search"></i>
                 </button>
@@ -89,8 +99,8 @@
         <!-- Mobile Search Modal -->
         <div id="search-popup" class="search-popup hidden">
             <div class="popup-content">
-              <input id="popup-search-input" type="text" placeholder="Search Portfolios...">
-              <button id="popup-search-button">Search</button>
+              <input id="popup-search-input" type="text" placeholder="포트폴리오 검색...">
+              <button id="popup-search-button">검색</button>
               <ul id="popup-autocomplete-list" class="hidden"></ul>
               <button id="close-search-modal" class="close-btn">✕</button>
             </div>
@@ -110,41 +120,41 @@
                 <!-- Slide 1: Form -->
                 <div class="slide">
                 <div class="submit-form">
-                    <h2 class="form-title">Contact Me</h2>
+                    <h2 class="form-title">문의하기</h2>
                     <form id="form">
                     <div class="input-box">
-                        <input type="text" name="name" class="input" id="name" placeholder="Full Name" required />
+                        <input type="text" name="name" class="input" id="name" placeholder="이름/업체명" required />
                     </div>
                     <div class="input-box">
-                        <input type="email" name="email" class="input" id="email" placeholder="Email" required />
+                        <input type="email" name="email" class="input" id="email" placeholder="이메일" required />
                     </div>
                     <div class="select-box">
                         <select name="category" id="catesel" required>
-                        <option value="">Select category</option>
-                        <option value="UX/UI">UX/UI</option>
-                        <option value="Web Development">Web Development</option>
-                        <option value="Ecommerce">E-Commerce</option>
-                        <option value="Graphic Design">Graphic Design</option>
-                        <option value="Product Package Design">Product Package Design</option>
-                        <option value="Product Information Design">Product Information Design</option>
-                        <option value="Logo Design">Logo Design</option>
-                        <option value="Print out Design">Print out Design</option>
-                        <option value="etc">Et Cetera</option>
+                        <option value="">카테고리 선택</option>
+                        <option value="UX/UI">UX/UI 디자인</option>
+                        <option value="Web Development">홈페이지&웹 개발</option>
+                        <option value="Ecommerce">쇼핑몰 제작</option>
+                        <option value="Graphic Design">그래픽 디자인</option>
+                        <option value="Product Package Design">제품 패키지 디자인</option>
+                        <option value="Product Information Design">상세페이지 디자인</option>
+                        <option value="Logo Design">로고 디자인</option>
+                        <option value="Print out Design">인쇄물 디자인</option>
+                        <option value="etc">기타</option>
                         </select>
                     </div>
                     <div class="input-box">
-                        <textarea name="message" class="input" id="message" placeholder="Write your request here." required></textarea>
+                        <textarea name="message" class="input" id="message" placeholder="요청 및 문의사항을 입력하세요." required></textarea>
                     </div>
-                    <button type="submit" class="sbtn" id="sbtn">Send</button>
+                    <button type="submit" class="sbtn" id="sbtn">제출</button>
                     </form>
                 </div>
                 </div>
 
                 <!-- Slide 2: Success message -->
                 <div class="slide success-message">
-                <h2>Thank You!</h2>
-                <p>Your request has been successfully submitted.</p>
-                <button class="back-btn" id="backBtn">← Back</button>
+                <h2>감사합니다!</h2>
+                <p>문의가 정상적으로 접수되었습니다.</p>
+                <button class="back-btn" id="backBtn">← 돌아가기</button>
                 </div>
             </div>
         </div>
@@ -155,7 +165,7 @@
     <div class="footer">
         <div class="footer-head">
             <img src="/My Dev/Ericreates Website/images/Logo/favicon.png" alt="ericreates logo">
-                <div class="footer-text">ERICREATES<br>Develop Your Website<br>Design Your Needs</div>
+                <div class="footer-text">에릭크리에이츠<br>홈페이지|쇼핑몰 개발<br>각종 디자인 작업</div>
             <div class="social-media">
                 <a href="mailto:ericreates92@gmail.com">
                     <i class="fa-solid fa-envelope" target="_blank"></i>
@@ -171,7 +181,7 @@
 
         <div class="footer-content">
             <div class="info">
-                <span class="skill-text">SKILLS</span>
+                <span class="skill-text">사용 기술</span>
                     <ul>
                         <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/HTML5_logo.png" alt="html"></li>
                         <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/CSS3_logo.png" alt="css"></li>

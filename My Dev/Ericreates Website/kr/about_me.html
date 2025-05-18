@@ -10,20 +10,30 @@
     <link rel="stylesheet" href="/My Dev/Ericreates Website/common/dark.css">
     <link rel="stylesheet" href="/My Dev/Ericreates Website/about me/about_me.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
-    <title>Ericreates | About me</title>
+    <title>개발자 & 디자인 소개 | 에릭크리에이츠</title>
     <link rel="icon" type="image/png" href="/My Dev/Ericreates Website/images/Logo/favicon.png" />
+
+    <link rel="alternate" hreflang="ko" href="https://ericreates.com/" />
+    <link rel="alternate" hreflang="en" href="https://ericreates.com/en/" />
+    <script>
+        // Redirect to English version if user's browser is in English
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang.startsWith("en")) {
+        window.location.href = "/en/";
+        }
+    </script>
 
     <!-- SEO -->
     <meta name="description" content="디자인 외주 │ UXUI 디자인 │ 그래픽디자인 │ 홈페이지 개발 │ 쇼핑몰 개발 │ 인쇄물디자인 │ 제품 패키지디자인 │ 상세 페이지 디자인 │ 12년 이상 디자인 경력 │ 1000건 이상 프로젝트 완료">
-    <meta name="keywords" content="Ericreates, portfolio, developer, designer, web design, web development, programming, ecommerce, website, wordpress, woocommerce, shopify">
+    <meta name="keywords" content="에릭크리에이츠, 웹개발, 홈페이지, 쇼핑몰, 개발, 디자인, 개발자, 웹디자인, 패키지 디자인, 상세페이지, 로고, 인쇄물, 아임웹, 카페24, 독립몰, 워드프레스, 우커머스, 쇼피파이, 프론트엔드, 백엔드, 홈페이지 제작, 쇼핑몰 제작">
     <meta name="author" content="Ericreates">
 
     <!-- Open Graph-->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Ericreates | About me">
+    <meta property="og:title" content="개발자 & 디자인 소개 | 에릭크리에이츠">
     <meta property="og:description" content="디자인 외주 │ UXUI 디자인 │ 그래픽디자인 │ 홈페이지 개발 │ 쇼핑몰 개발 │ 인쇄물디자인 │ 제품 패키지디자인 │ 상세 페이지 디자인 │ 12년 이상 디자인 경력 │ 1000건 이상 프로젝트 완료">
     <meta property="og:url" content="https://ericreates.com/">
-    <meta property="og:site_name" content="Ericreates │ 에릭크리에이츠">
+    <meta property="og:site_name" content="Eric'reates │ 에릭크리에이츠">
     <meta property="og:image" content="/My Dev/Ericreates Website/images/logo/main logo.png">
 
     <!-- Twitter Card -->
@@ -59,15 +69,15 @@
     </div>
 
     <nav id="mainNav" class="shrinkable">
-        <a href="/My Dev/Ericreates Website/en/index.html"><img src="/My Dev/Ericreates Website/images/logo/main logo.png" alt="ericreates"></a>
+        <a href="/My Dev/Ericreates Website/kr/index.html"><img src="/My Dev/Ericreates Website/images/logo/main logo.png" alt="ericreates"></a>
 
         <div class="nav-lists" id="navList">
             <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="/My Dev/Ericreates Website/en/index.html">HOME</a></li>
-                    <li><a href="/My Dev/Ericreates Website/en/portfolios.html">PORTFOLIOS</a></li>
-                    <li><a href="/My Dev/Ericreates Website/en/about_me.html">ABOUT ME</a></li>
-                    <li><a href="/My Dev/Ericreates Website/en/contact.html">CONTACT</a></li>
+                    <li><a href="/My Dev/Ericreates Website/kr/index.html">HOME</a></li>
+                    <li><a href="/My Dev/Ericreates Website/kr/portfolios.html">PORTFOLIOS</a></li>
+                    <li><a href="/My Dev/Ericreates Website/kr/about_me.html">ABOUT ME</a></li>
+                    <li><a href="/My Dev/Ericreates Website/kr/contact.html">CONTACT</a></li>
                 </ul>
         </div>
 
@@ -78,7 +88,7 @@
 
         <div class="header-search">
             <div class="search-box">
-                <input type="text" id="search-input" placeholder="Search portofolios" autocomplete="off">
+                <input type="text" id="search-input" placeholder="포트폴리오 검색..." autocomplete="off">
                 <button id="search-button">
                     <i class="fas fa-search"></i>
                 </button>
@@ -90,8 +100,8 @@
         <!-- Mobile Search Modal -->
         <div id="search-popup" class="search-popup hidden">
             <div class="popup-content">
-              <input id="popup-search-input" type="text" placeholder="Search Portfolios...">
-              <button id="popup-search-button">Search</button>
+              <input id="popup-search-input" type="text" placeholder="포트폴리오 검색...">
+              <button id="popup-search-button">검색</button>
               <ul id="popup-autocomplete-list" class="hidden"></ul>
               <button id="close-search-modal" class="close-btn">✕</button>
             </div>
@@ -106,49 +116,49 @@
     <!-- About me content -->
      <div class="container">
         <div class="about_top">
-            <span class="com_name">ERICREATES</span>
+            <span class="com_name">에릭크리에이츠</span>
             <div class="typing"><span class="typetext"></span></div>
         </div>
         <div class="about_as_wrap">
             <!-- Graphic & Package Designer-->
             <div class="graphic">
                 <div class="about_as gra">
-                    <span class="title">As a Graphic & Package Designer</span>
+                    <span class="title">그래픽 & 제품 패키지 디자이너</span>
                     <img src="/My Dev/Ericreates Website/images/Project/Graphics/Portfolio_vertical.jpg" alt="graphic designer">
                     <div class="des">
-                        <p>+11 Years Work Experiences</p>
-                        <p>Over 1,000 projects completed</p>
-                        <p>Since 2021, running entire KIMCHIPS project</p>
-                        <p>Have been co-working with famous condom brands such as Playboy & SKYN</p>
-                        <p>Over the years, I've been working on graphic design for over 30 companies.</p>
+                        <p>12년 이상 경력</p>
+                        <p>1,000건 이상의 프로젝트 완료</p>
+                        <p>2021년부터 현재까지 김칩스 프로젝트 총괄</p>
+                        <p>플레이보이 콘돔 & SKYN 콘돔 등 유명 브랜드와 지속적인 협업중</p>
+                        <p>30개 이상의 회사와 다년간 지속적으로 그래픽 디자인 작업 지속</p>
                     </div>
                 </div>
     
                 <!-- Tools & Skills -->
                 <div class="tool-wrap">
                     <div class="tool_top">
-                        <span class="tool_title">Tools & Skills</span>
-                        <span class="service" id="graOpenBtn">Services</span>
+                        <span class="tool_title">사용 기술 & 툴</span>
+                        <span class="service" id="graOpenBtn">작업 범위</span>
                         <!-- Graphic Design Modal -->
                         <div id="graModal" class="hidden">
                             <div id="graContent">
                                 <button id="graCloseBtn">X</button>
                                 <section class="gra-service">
-                                    <h2>Graphic & Package Design</h2>
+                                    <h2>그래픽 & 제품 패키지 디자인</h2>
                                     <ul>
-                                        <li><i class="fa-solid fa-square-check"></i> UX/UI Wireframes & Prototypes</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Product Package Design</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Web & Mobile Graphic Design</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Logo Design</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Visualize Information & Data</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Mock-ups</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Product Introduction</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Print Outs</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Banner & Poster</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Commercials</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Catalogue & Leaflet</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Business Card & Flyer</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Besides all designs for business</li>
+                                        <li><i class="fa-solid fa-square-check"></i> UX/UI 와이어프레임 & 프로토타입</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 제품 패키지 디자인</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 웹 & 모바일 그래픽 디자인</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 로고 디자인</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 정보 & 데이터 시각화</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 목업</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 상세페이지 디자인</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 인쇄물 디자인</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 배너 & 포스터 디자인</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 광고물 디자인</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 카달로그 & 리플렛 디자인</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 명함 & 전단지 디자인</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 사업에 필요한 모든 디자인물</li>
                                     </ul>
                                 </section>
                             </div>
@@ -157,15 +167,15 @@
                     <div class="tool_img">
                         <div class="tool_icon">
                             <img src="/My Dev/Ericreates Website/images/Footer_skills/photoshop.png" alt="Skill Photoshop">
-                            <div class="tooltip">Photoshop</div>
+                            <div class="tooltip">포토샵</div>
                         </div>
                         <div class="tool_icon">
                             <img src="/My Dev/Ericreates Website/images/Footer_skills/illustrator.png" alt="Skill Illustrator">
-                            <div class="tooltip">Illustrator</div>
+                            <div class="tooltip">일러스트레이터</div>
                         </div>
                         <div class="tool_icon">
                             <img src="/My Dev/Ericreates Website/images/Footer_skills/figma.png" alt="Skill Figma">
-                            <div class="tooltip">Figma</div>
+                            <div class="tooltip">피그마</div>
                         </div>
                     </div>
                 </div>
@@ -174,38 +184,38 @@
             <!-- Web Developer -->
             <div class="webdev">
                 <div class="about_as dev">
-                    <span class="title">As a Web Developer</span>
+                    <span class="title">웹 개발자</span>
                     <img src="/My Dev/Ericreates Website/images/Project/Website/Shopify.jpg" alt="Web Developer">
                     <div class="des">
-                        <p>Build responsive Ecommerce & Website</p>
-                        <p>Skilled in HTML, CSS, JavaScript</p>
-                        <p>Use web-builders WorePress, Shopify, Imweb, Cafe24</p>
-                        <p>Over 10 web project completed.</p>
-                        <p>SEO friendly work</p>
+                        <p>반응형 홈페이지 & 쇼핑몰 개발</p>
+                        <p>HTML, CSS, JavaScript 프론트엔드 개발</p>
+                        <p>워드프레스, 쇼피파이, 아임웹, 카페24 웹빌더 사용 가능</p>
+                        <p>10여개 이상 웹 프로젝트 완료</p>
+                        <p>검색엔진최적화 기반 작업</p>
                     </div>
                 </div>
     
                 <!-- Tools & Skills -->
                 <div class="tool-wrap">
                     <div class="tool_top">
-                        <span class="tool_title">Tools & Skills</span>
-                        <span class="service" id="devOpenBtn">Services</span>
+                        <span class="tool_title">사용 기술 & 툴</span>
+                        <span class="service" id="devOpenBtn">작업 범위</span>
                         <!-- Web Dev Modal -->
                         <div id="devModal" class="hidden">
                             <div id="devContent">
                                 <button id="devCloseBtn">X</button>
                                 <section class="dev-service">
-                                    <h2>Web Development</h2>
+                                    <h2>웹 개발</h2>
                                     <ul>
-                                        <li><i class="fa-solid fa-square-check"></i> Responsive Desktop & Mobile</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Independenced E-Commerce</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Website</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Landing Page</li>
-                                        <li><i class="fa-solid fa-square-check"></i> SEO Service</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Connect Google Analytics</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Social Login & Payment</li>
-                                        <li><i class="fa-solid fa-square-check"></i> WordPress, Shopify, Imweb, Cafe24</li>
-                                        <li><i class="fa-solid fa-square-check"></i> Programming</li>
+                                        <li><i class="fa-solid fa-square-check"></i> PC & 모바일 반응형</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 독립몰 개발</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 홈페이지 개발</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 랜딩페이지 개발</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 검색엔진최적화 작업</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 구글 애널리틱스 연동</li>
+                                        <li><i class="fa-solid fa-square-check"></i> SNS 연동 & 결제 기능 추가</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 워드프레스, 쇼피파이, 아임웹, 카페24</li>
+                                        <li><i class="fa-solid fa-square-check"></i> 프로그래밍 | 기능 개발</li>
                                     </ul>
                                 </section>
                             </div>
@@ -222,15 +232,15 @@
                         </div>
                         <div class="tool_icon">
                             <img src="/My Dev/Ericreates Website/images/Footer_skills/JavaScript_logo.png" alt="Skill JavaScript">
-                            <div class="tooltip">JavaScript</div>
+                            <div class="tooltip">자바스크립트</div>
                         </div>
                         <div class="tool_icon">
                             <img src="/My Dev/Ericreates Website/images/Footer_skills/WordPress_blue_logo.svg.png" alt="Tool WordPress">
-                            <div class="tooltip">WordPress</div>
+                            <div class="tooltip">워드프레스</div>
                         </div>
                         <div class="tool_icon">
                             <img src="/My Dev/Ericreates Website/images/Footer_skills/Shopify_logo.svg.png" alt="Tool Shopify">
-                            <div class="tooltip">Shopify</div>
+                            <div class="tooltip">쇼피파이</div>
                         </div>
                     </div>
                 </div>
@@ -239,7 +249,7 @@
 
     <!-- Representative Projects -->
     <section class="rep-pro-sec">
-        <div class="rep-title"><span class="rep-project">Main Large Projects</span></div>
+        <div class="rep-title"><span class="rep-project">주요 대형 프로젝트</span></div>
         <div class="blog-slider">
         <div class="blog-slider__wrp swiper-wrapper">
         
@@ -248,18 +258,18 @@
                 <img src="/My Dev/Ericreates Website/images/Project/Package/kimchips.jpg" alt="kimchips project">
             </div>
             <div class="blog-slider__content">
-                <div class="blog-slider__subtitle">Since 2021 - Current</div>
-                <div class="blog-slider__title">Kimchips Project</div>
-                <div class="blog-slider__text">From Brand Idendity, Ecommerce to marketing</div>
-                <div class="blog-slider__feature"><span id="uut">100% Contribution</span> Whole project lead</div>
+                <div class="blog-slider__subtitle">Since 2021 - 현재</div>
+                <div class="blog-slider__title">김칩스 프로젝트</div>
+                <div class="blog-slider__text">브랜드 로고부터 쇼핑몰, 마케팅 모든 단계의 실무 작업</div>
+                <div class="blog-slider__feature"><span id="uut">기여도 100%</span> 전체 프로젝트 리드&실무</div>
                 <ul class="blog-slider__whens">
-                <li class="blog-slider__when"># Logo</li>
-                <li class="blog-slider__when"># Package</li>
-                <li class="blog-slider__when"># Built Web</li>
-                <li class="blog-slider__when"># Graphics etc.</li>		  
+                <li class="blog-slider__when"># 로고</li>
+                <li class="blog-slider__when"># 제품 패키지</li>
+                <li class="blog-slider__when"># 쇼핑몰 개발</li>
+                <li class="blog-slider__when"># 그래픽 작업 등</li>		  
                 </ul>
-                <div class="blog-slider__personality">Graphics * Photo edit * FE Dev * SEO * Marketing</div>
-                <a href="https://kimchips.co.kr" target="_blank" class="blog-slider__button">View Website</a>
+                <div class="blog-slider__personality">그래픽디자인 * 사진 보정&편집 * 웹개발 * SEO * 마케팅</div>
+                <a href="https://kimchips.co.kr" target="_blank" class="blog-slider__button">사이트 보러가기</a>
             </div>
             </div>
             
@@ -269,17 +279,17 @@
             </div>
             <div class="blog-slider__content">
                 <div class="blog-slider__subtitle">2020 - 2021</div>
-                <div class="blog-slider__title">Breathesuit Project</div>
-                <div class="blog-slider__text">Fashion mask brand whole project lead</div>
-                <div class="blog-slider__feature">Whole project lead <span id="rt">100% Contribution</span></div>
+                <div class="blog-slider__title">브리더수트 프로젝트</div>
+                <div class="blog-slider__text">패션마스크 브랜드 전체 프로젝트 리드 & 실무</div>
+                <div class="blog-slider__feature">전 프로젝트 실무 <span id="rt">기여도 100%</span></div>
                 <ul class="blog-slider__whens">
-                <li class="blog-slider__when"># BI Logo</li>
-                <li class="blog-slider__when"># Package Set</li>
-                <li class="blog-slider__when"># Built Web</li>
-                <li class="blog-slider__when"># Graphics etc.</li>	  
+                <li class="blog-slider__when"># BI 로고</li>
+                <li class="blog-slider__when"># 패키지 기획&디자인</li>
+                <li class="blog-slider__when"># 쇼핑몰 개발</li>
+                <li class="blog-slider__when"># 그래픽 등</li>	  
                 </ul>
-                <div class="blog-slider__personality">Graphics * Packages * Web builder * Marketing</div>
-                <a href="https://www.breathesuit.com" target="_blank" class="blog-slider__button">View Website</a>
+                <div class="blog-slider__personality">그래픽디자인 * 패키지 * 웹빌더 * 마케팅</div>
+                <a href="https://www.breathesuit.com" target="_blank" class="blog-slider__button">사이트 보러가기</a>
             </div>
             </div>
             
@@ -289,17 +299,17 @@
             </div>
             <div class="blog-slider__content">
                 <div class="blog-slider__subtitle">2021</div>
-                <div class="blog-slider__title">Medichee Project</div>
-                <div class="blog-slider__text">Set up for ecommerce</div>
-                <div class="blog-slider__feature"><span id="aloe">100% Contribution</span> for ecommerce</div>
+                <div class="blog-slider__title">메디치 프로젝트</div>
+                <div class="blog-slider__text">온라인 판매를 위한 전체 프로세스 작업</div>
+                <div class="blog-slider__feature">온라인 판매를 위한 작업<span id="aloe">기여도 100%</span></div>
                 <ul class="blog-slider__whens">
-                <li class="blog-slider__when"># BI Logo</li>
-                <li class="blog-slider__when"># Built Web</li>
-                <li class="blog-slider__when"># Graphics</li>
-                <li class="blog-slider__when"># Print outs</li>
+                <li class="blog-slider__when"># BI 로고</li>
+                <li class="blog-slider__when"># 쇼핑몰 제작</li>
+                <li class="blog-slider__when"># 그래픽디자인</li>
+                <li class="blog-slider__when"># 인쇄물</li>
                 </ul>
-                <div class="blog-slider__personality">Graphics * Web builder * Subsidiary materials</div>
-                <a href="https://medichee.com" target="_blank" class="blog-slider__button">View Website</a>
+                <div class="blog-slider__personality">그래픽디자인 * 웹빌더 * 부자재 디자인</div>
+                <a href="https://medichee.com" target="_blank" class="blog-slider__button">사이트 보러가기</a>
             </div>
             </div>
             
@@ -313,7 +323,7 @@
 
     <!-- Work experience -->
     <section class="history-section">
-        <h2 class="section-title">Project History</h2>
+        <h2 class="section-title">프로젝트 경력</h2>
         <div class="history-list" id="historyList">
             <!-- Add dynamic content with JS -->
         </div>
@@ -322,7 +332,7 @@
 
     <!-- Partners -->
     <section class="pn-section">
-    <div class="pn-title"><span class="title-text">Partners</span></div>
+    <div class="pn-title"><span class="title-text">파트너</span></div>
     <div class="pn-slide">
         <div class="partners">
             <img class="partner" src="/My Dev/Ericreates Website/images/Partners/playboy.png" alt="playboy condoms">
@@ -364,7 +374,7 @@
     <div class="footer">
         <div class="footer-head">
             <img src="/My Dev/Ericreates Website/images/Logo/favicon.png" alt="ericreates logo">
-                <div class="footer-text">ERICREATES<br>Develop Your Website<br>Design Your Needs</div>
+                <div class="footer-text">에릭크리에이츠<br>홈페이지|쇼핑몰 개발<br>각종 디자인 작업</div>
             <div class="social-media">
                 <a href="mailto:ericreates92@gmail.com">
                     <i class="fa-solid fa-envelope" target="_blank"></i>
@@ -380,7 +390,7 @@
 
         <div class="footer-content">
             <div class="info">
-                <span class="skill-text">SKILLS</span>
+                <span class="skill-text">사용 기술</span>
                     <ul>
                         <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/HTML5_logo.png" alt="html"></li>
                         <li class="skill"><img src="/My Dev/Ericreates Website/images/Footer_skills/CSS3_logo.png" alt="css"></li>
@@ -456,15 +466,15 @@
     <!-- Project History Part-->
     <script>
         const projectGroups = {
-            "2025": ["Dubai Ecommerce Website Renewal Development", "Playboy Condoms Ecommerce Website Renewal Development", "Armor Condoms Ecommerce Website Renewal Development", "WordPress Community Website", "Armor Condoms Package Renewal Design", "Kimchips Snack Pouch Package Renewal Design", "Grainplan Instant Rice lid Design", "FINCON Box Package Design", "Numerous SEO works", "Robero Battery Label Design", "De Nature Pouch Package Design"],
-            "2024": ["Kimchips Ecommerce Website Renewal Development", "PNChip Snack Pouch Package Design", "Children's Future Website Development", "SHINHENG E&T Website Development + Webmail service", "Start Naver Carousel Structured Data Service", "Fellotex Exhibition Booth Banner Design", "Dried Kiwi Snack Pouch Package Design", "SKYN Condom Website Indicator & Visual Interactive Development", "Interval Popup Function Development", "Kimchips Garlic Cheese Snack Pouch Design", "Breathesuit Disposable Mask Package Design", "Salama & Million Condom Box Package Renewal Design", "Numerous Graphic Designs", "Medichee Product Information Page Designs", "Numerous Printout Designs"],
-            "2023": ["Armor Condoms Box Package Design", "Kimchips Spicy & Seafood Snack Pouch Package Design", "Fellotex Exhibition Booth Banner Design", "Kimchips Snack Introduction Design", "Kimchips CU Showcard Design", "Kimchips Leaflet Design", "Kimchips Product Information Page Design", "Numerous Graphic Design"],
-            "2022": ["Co-work with Playboy Condoms for Package Design", "Built Armor Condoms Ecommerce Website", "Armor Condoms Package Box Design", "Built HISuniform Ecommerce Website", "HISuniform Product Information Page Design", "Numerous Graphic Design", "Numberous Printout Design"],
-            "2021": ["Kimchips Project - Package, Website, Logo, ect.", "Careher Condoms Box Package Design", "Numerous Product Package Design", "Numerous Graphic Design", "Numerous Printout Design"],
-            "2020": ["Breathesuit Project - Package, Website, Logo, etc.", "Built Medichee Ecommerce Website", "Built SHINHENG E&T Website", "Careher Condoms Box Package Design", "Breathelook Package Design", "Numerous Graphic Design"],
-            "2019": ["Built Fellotex Website", "Built Playboy Condoms Korea Ecommerce Website", "Built LifeStyles Condoms Ecommerce Website", "Built Careher Condoms Ecommerce Website", "Co-work with SKYN Condoms' Package Design", "Numerous Graphic Design"],
-            "2017-2018": ["Work at an Ultra-sonic Dishwasher Company", "> Built Ecommerce Website", "> All Graphic Design", "> All Printout Design"],
-            "2014-2016": ["Work at an Art Academy", "> Made an Education Introduction Book", "> Graphic Design"]
+            "2025": ["두바이 한인 온라인 쇼핑몰 리뉴얼 개발", "플레이보이 콘돔 자사몰 리뉴얼 작업", "아머 콘돔 쇼핑몰 리뉴얼 작업", "워드프레스 커뮤니티 사이트 작업", "아머 콘돔 패키지 디자인 리뉴얼", "김칩스 패키지 디자인 리뉴얼", "그레인플랜 즉석밥 리드 디자인", "핑콘 박스 패키지 디자인", "SEO 작업 다수", "로베르토 건전지 라벨 디자인", "드네이처 패키지 디자인"],
+            "2024": ["김칩스 자사몰 리뉴얼 개발", "프앤칩 스낵 패키지 디자인", "재단법인 칠드런스퓨처 홈페이지 개발", "무역회사 신행이엔티 홈페이지 리뉴얼 개발 + 웹메일 서버 연동", "네이버 캐러셀 구조화된 데이터 서비스 시작", "원단회사 펠로텍스 전시회 부스 디자인", "말린 키위 스낵 패키지 디자인", "SKYN 콘돔 쇼핑몰 인디케이터 & 인터렉티브 비주얼 개발", "시간차 팝업 기능 개발", "김칩스 갈릭치즈맛 패키지 디자인", "브리더수트 일회용 마스크 패키지 디자인", "살라마 & 밀리언 콘돔 패키지 리뉴얼 디자인", "그래픽 디자인 다수", "메디치 상세페이지 디자인", "인쇄물 디자인 다수"],
+            "2023": ["아머 콘돔 신품목 패키지 디자인", "김칩스 매운맛&해물맛 패키지 디자인", "원단회사 펠로텍스 전시회 부스 디자인", "김칩스 제품 소개서 디자인", "김칩스 편의점 쇼카드 디자인", "김칩스 3단 리플렛 디자인", "김칩스 상세페이지 디자인", "그래픽 디자인 작업 다수"],
+            "2022": ["플레이보이 콘돔 패키지 디자인 협업", "아머 콘돔 쇼핑몰 작업", "아머 콘돔 패키지 디자인", "히스유니폼 자사몰 작업", "히스유니폼 상세페이지 디자인", "그래픽 디자인 다수", "인쇄물 디자인 다수"],
+            "2021": ["김칩스 프로젝트 - 제품 패키지, 쇼핑몰, 로고, 등.", "케어허 콘돔 리뉴얼 디자인", "제품 패키지 디자인 다수", "그래픽 디자인 다수", "인쇄물 디자인 작업 다수"],
+            "2020": ["브리더수트 프로젝트 - 제품 패키지, 자사몰, 로고, 등.", "메디치 쇼핑몰 제작", "무역회사 신행이엔티 홈페이지 제작", "케어허 콘돔 패키지 디자인", "브리더룩 패키지 디자인", "그래픽 디자인 다수"],
+            "2019": ["펠로텍스 홈페이지 제작", "플레이보이 콘돔 코리아 쇼핑몰 제작", "LifeStyles 콘돔 자사몰 제작", "케어허 콘돔 자사몰 제작", "SKYN 콘돔 패키지 디자인 협업", "그래픽 디자인 다수"],
+            "2017-2018": ["초음파식기세척기 OEM 판매 회사 근무", "> 자사 쇼핑몰 제작", "> 그래픽 디자인 전반", "> 인쇄물 디자인 전반"],
+            "2014-2016": ["미술학원 근무", "> 입시설명회 책자 제작", "> 그래픽 디자인"]
         };
 
         const historyList = document.getElementById("historyList");
